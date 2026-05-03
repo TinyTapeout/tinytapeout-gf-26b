@@ -1,7 +1,7 @@
-id: 'ttgf26a'
-name: 'Tiny Tapeout GF 26a'
+id: 'ttgf26b'
+name: 'Tiny Tapeout GF 26b'
 pdk: 'gf180mcuD'
-end_date: '2026-06-22'
+end_date: '2026-06-24'
 project_dir: 'projects'
 top_level_macro: 'tt_gf_wrapper'
 powered_netlists: true
