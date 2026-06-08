@@ -1,0 +1,42 @@
+124. Printing statistics.
+
+=== tt_um_Vincent2405_adder_tree ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      330        - wires
+      365        - wire bits
+       48        - public wires
+       83        - public wire bits
+        8        - ports
+       43        - port bits
+      346 8.05E+03 cells
+       17  298.547   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+        8  140.493   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        1   19.757   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+       47  412.698   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       40 2.55E+03   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       35   384.16   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        4   61.466   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+        1   19.757   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+       24  316.109   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       11  193.178   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        4   87.808   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+       29  509.286   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        2   52.685   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        1   32.928   gf180mcu_fd_sc_mcu7t5v0__oai222_1
+       40   878.08   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        2   48.294   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        9  158.054   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       16  140.493   gf180mcu_fd_sc_mcu7t5v0__tiel
+        7  199.763   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        1   52.685   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+       33  869.299   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+       11  555.386   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_Vincent2405_adder_tree': 8045.408000
+     of which used for sequential elements: 2546.432000 (31.65%)
+
