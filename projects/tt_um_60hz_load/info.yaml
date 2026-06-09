@@ -1,0 +1,58 @@
+# Tiny Tapeout project information
+project:
+  title:        "60 Hz Grid-Forming ASIC with Dump-Load Control"      # Project title
+  author:       "Eric Pearson"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "a CORDIC-locked grid-forming reference + linear dump-load controller ASIC for driving micro-inverters"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     48000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_60hz_load"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "cordic.sv"
+    - "adc_in.sv"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "adc_sdata0"    # AC ADC serial data input Vac 
+  ui[1]: "adc_sdata1"    # DC ADC serial data input Vdc
+  ui[2]: "gain_sine"     # Pwm in Scales generated 60 Hz sine amplitude
+  ui[3]: "gain_out"      # Pwm in Scales dump PWM strength (max dump power)
+  ui[4]: "gain_ac"       # Pwm in Scales IIR loop feedback gain (loop stiffness)
+  ui[5]: "gain_dc"       # Pwm in Scales fast error accumulation (effective threshold)
+  ui[6]: "gain_vdc"      # Pwm in Scales DC Vref
+  ui[7]: "mode_ac"       # AC integration 1/4 cycle, else full
+
+  # Outputs
+  uo[0]: "adc_cs"           # ADC chip-select / sample strobe
+  uo[1]: "grid_pwm_p"       # Grid-former PWM (positive)
+  uo[2]: "grid_pwm_n"       # Grid-former PWM (negative)
+  uo[3]: "dump_pwm"         # DC-link dump FET PWM
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
