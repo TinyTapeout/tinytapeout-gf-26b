@@ -1,0 +1,63 @@
+# Tiny Tapeout project information
+project:
+  title:        "SPI-CPU"   # Project title
+  author:       "MS College of Engineering"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A 4-bit CPU using the SPI Flash RAM from the QSPI PMOD to load programs."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     30000000     # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_spi_cpu_top"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_spi_cpu.v"
+    - "spi_wrap.v"
+    - "Control.v"
+    - "spi_read_byte.v"
+    - "Registers.v"
+    - "ALU.v"
+    - "cpu.v"
+    # - "spi_ram_model.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "DATA_A[0]"
+  ui[1]: "DATA_A[1]"
+  ui[2]: "DATA_A[2]"
+  ui[3]: "DATA_A[3]"
+  ui[4]: "DATA_B[0]"
+  ui[5]: "DATA_B[1]"
+  ui[6]: "DATA_B[2]"
+  ui[7]: "DATA_B[3]"
+  
+  # Outputs
+  uo[0]: "OUT_REG[0]"
+  uo[1]: "OUT_REG[1]"
+  uo[2]: "OUT_REG[2]"
+  uo[3]: "OUT_REG[3]"
+  uo[4]: "OUT_REG[4]"
+  uo[5]: "OUT_REG[5]"
+  uo[6]: "OUT_REG[6]"
+  uo[7]: "OUT_REG[7]"
+
+  # Bidirectional pins
+  uio[0]: "SPI_CS_N"
+  uio[1]: "SPI_MOSI"
+  uio[2]: "SPI_MISO"
+  uio[3]: "SPI_SCK"
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: "CPU_VALID"
+
+# Do not change!
+yaml_version: 6
