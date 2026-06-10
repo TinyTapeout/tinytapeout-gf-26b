@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Project"      # Project title
+  author:       "DHR"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Description of project"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_ex_drosen766"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "A"
+  ui[1]: "B"
+  ui[2]: "C"
+  ui[3]: "D"
+  ui[4]: "E"
+  ui[5]: "F"
+  ui[6]: "G"
+  ui[7]: "H"
+
+  # Outputs
+  uo[0]: "I"
+  uo[1]: "J"
+  uo[2]: "K"
+  uo[3]: "L"
+  uo[4]: "M"
+  uo[5]: "N"
+  uo[6]: "O"
+  uo[7]: "P"
+
+  # Bidirectional pins
+  uio[0]: "Q"
+  uio[1]: "R"
+  uio[2]: "S"
+  uio[3]: "T"
+  uio[4]: "U"
+  uio[5]: "V"
+  uio[6]: "W"
+  uio[7]: "X"
+
+# Do not change!
+yaml_version: 6
