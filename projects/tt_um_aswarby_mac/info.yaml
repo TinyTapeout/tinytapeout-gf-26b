@@ -1,0 +1,54 @@
+# Tiny Tapeout project information
+project:
+  title:        "Aswarby INT8 MAC"
+  author:       "Mark Shilton"
+  discord:      ""
+  description:  "Byte-serial weight-stationary signed INT8 multiply-accumulate engine"
+  language:     "Verilog"
+  clock_hz:     50000000
+
+  # GF180 single tile is about 340x160 uM. Start at 1x1; bump to 1x2 only if the
+  # LibreLane area report overflows. Valid: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4, 4x4.
+  tiles: "1x1"
+
+  top_module:  "tt_um_aswarby_mac"
+
+  source_files:
+    - "mac_core.v"
+    - "mac_fsm.v"
+    - "tt_um_aswarby_mac.v"
+
+# Pinout (datasheet/website labels).
+pinout:
+  # Inputs
+  ui[0]: "data[0] (signed INT8 in)"
+  ui[1]: "data[1]"
+  ui[2]: "data[2]"
+  ui[3]: "data[3]"
+  ui[4]: "data[4]"
+  ui[5]: "data[5]"
+  ui[6]: "data[6]"
+  ui[7]: "data[7]"
+
+  # Outputs
+  uo[0]: "acc_byte[0] (selected accumulator byte)"
+  uo[1]: "acc_byte[1]"
+  uo[2]: "acc_byte[2]"
+  uo[3]: "acc_byte[3]"
+  uo[4]: "acc_byte[4]"
+  uo[5]: "acc_byte[5]"
+  uo[6]: "acc_byte[6]"
+  uo[7]: "acc_byte[7]"
+
+  # Bidirectional pins
+  uio[0]: "cmd[0] (in)"
+  uio[1]: "cmd[1] (in)"
+  uio[2]: "strobe (in)"
+  uio[3]: "rd_sel[0] (in)"
+  uio[4]: "rd_sel[1] (in)"
+  uio[5]: "done (out)"
+  uio[6]: "ovf (out)"
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
