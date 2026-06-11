@@ -1,0 +1,50 @@
+140. Printing statistics.
+
+=== tt_um_aswarby_mac ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      983        - wires
+     1018        - wire bits
+      134        - public wires
+      169        - public wire bits
+        8        - ports
+       43        - port bits
+      999  2.4E+04 cells
+       22  386.355   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        5   109.76   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        5  120.736   gf180mcu_fd_sc_mcu7t5v0__and4_1
+        7  153.664   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      110 1.93E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        5  120.736   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       33  651.974   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        2   26.342   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       41  360.013   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      126 8.02E+03   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+        8  561.971   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+      199 2.18E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       21  322.694   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       10  197.568   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+       67   882.47   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       10  175.616   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+        7  153.664   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      125   2195.2   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       11  265.619   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        3   79.027   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       20  351.232   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        5   109.76   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        3   26.342   gf180mcu_fd_sc_mcu7t5v0__tieh
+       11   96.589   gf180mcu_fd_sc_mcu7t5v0__tiel
+       34  970.278   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        7  368.794   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+       76    2E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+       20 1.01E+03   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_aswarby_mac': 23975.974400
+     of which used for sequential elements: 8021.260800 (33.46%)
+
