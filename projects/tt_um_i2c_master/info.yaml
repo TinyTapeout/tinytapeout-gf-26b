@@ -1,0 +1,44 @@
+project:
+  title: "I2C Master Controller"
+  author: "Akshaya Institute of Technology"
+  discord: ""
+  description: "Simple I2C Master Controller that transmits one byte to a fixed slave address (0x50). Generates START and STOP conditions and provides BUSY, DONE, and ACK status outputs."
+  language: "Verilog"
+  clock_hz: 1000000
+
+  tiles: "1x1"
+
+  top_module: "tt_um_i2c_master"
+
+  source_files:
+    - "project.v"
+
+pinout:
+  ui[0]: "START"
+  ui[1]: "DATA_BIT1"
+  ui[2]: "DATA_BIT2"
+  ui[3]: "DATA_BIT3"
+  ui[4]: "DATA_BIT4"
+  ui[5]: "DATA_BIT5"
+  ui[6]: "DATA_BIT6"
+  ui[7]: "DATA_BIT7"
+
+  uo[0]: "BUSY"
+  uo[1]: "DONE"
+  uo[2]: "ACK"
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  uio[0]: "SDA"
+  uio[1]: "SCL"
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
