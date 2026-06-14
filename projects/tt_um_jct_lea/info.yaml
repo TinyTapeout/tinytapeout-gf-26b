@@ -1,0 +1,86 @@
+# Tiny Tapeout project information
+project:
+  title:        "LEA-128"      # Project title
+  author:       "awayzer JCT"             # Your name
+  discord:      ""                         # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "iterative approach implementation of the LEA128 block cipher"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     1000000      # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_jct_lea"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "mux_2_1.v"
+    - "mux_3_1.v"
+    - "mux_4_1.v"
+    - "encryption_rotation.v"
+    - "encryption_rotation_top.v"
+    - "decryption_rotation.v"
+    - "decryption_rotation_top.v"
+    - "xor.v"
+    - "round_registers.v"
+    - "round_function_top.v"
+    - "key_rotation_enc.v"
+    - "top_key_rotation_enc.v"
+    - "key_rotation_dec.v"
+    - "top_key_rotation_dec.v"
+    - "key_registers.v"
+    - "key_registers_top.v"
+    - "constant_generator.v"
+    - "constant_generator_top.v"
+    - "modular_subtraction.v"
+    - "modular_addition.v"
+    - "key_schedule_top.v"
+    - "lea_128_core.v"
+    - "counter_5_bits.v"
+    - "counter_2_bits.v"
+    - "state_machine.v"
+    - "logical_unit_top.v"
+    - "processed_data_storage.v"
+    - "lea_128_top.v"
+    - "input_handshake.v"
+    - "output_handshake.v"
+    - "tt_um_jct_lea_128.v"
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "data_in[0]"
+  ui[1]: "data_in[1]"
+  ui[2]: "data_in[2]"
+  ui[3]: "data_in[3]"
+  ui[4]: "data_in[4]"
+  ui[5]: "data_in[5]"
+  ui[6]: "data_in[6]"
+  ui[7]: "data_in[7]"
+
+  # Outputs
+  uo[0]: "data_out[0]"
+  uo[1]: "data_out[1]"
+  uo[2]: "data_out[2]"
+  uo[3]: "data_out[3]"
+  uo[4]: "data_out[4]"
+  uo[5]: "data_out[5]"
+  uo[6]: "data_out[6]"
+  uo[7]: "data_out[7]"
+
+  # Bidirectional pins
+  uio[0]: "req_rx"
+  uio[1]: "req_tx"
+  uio[2]: "ack_tx"
+  uio[3]: "enable_encryption"
+  uio[4]: "enable_decryption"
+  uio[5]: ""
+  uio[6]: "valid_tx"
+  uio[7]: "ack_rx"
+# Do not change!
+yaml_version: 6
