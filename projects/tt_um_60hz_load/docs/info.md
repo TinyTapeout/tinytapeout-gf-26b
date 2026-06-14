@@ -1,99 +1,103 @@
-# **60 Hz Grid‑Forming ASIC with DC‑Link Dump‑Load Control**  
+# **60 Hz Grid‑Forming ASIC with DC‑Link Dump‑Load Control**
+
 *A TinyTapeout ASIC for grid‑aware AC generation and power balancing*
 
 This ASIC implements a **self‑contained, grid‑aware control loop** capable of generating a clean 60 Hz reference waveform while simultaneously regulating real‑power flow using a **DC‑link dump load**. It is designed for small AC micro‑systems where PV inverters, a low‑power grid‑former, and a resistive dump load must coexist without external controllers.
 
 The chip senses the AC and DC waveforms, compares DC to a Vref and AC to an internal CORDIC‑generated reference, and adjusts a DC‑side dump FET to maintain long‑term phase and amplitude stability. All control is performed on‑chip using add/shift arithmetic, a fast error accumulator, a slow IIR loop, and a minimum‑pulse‑width PWM engine.
 
----
+![Block Diagram](block_diagram.png)
 
+\---
 ## **Core Features**
 
-- **CORDIC‑locked 60 Hz sine generator**  
-  Produces a stable, phase‑accurate reference for a low‑power H‑bridge grid‑former.
+* **CORDIC‑locked 60 Hz sine generator**  
+Produces a stable, phase‑accurate reference for a low‑power H‑bridge grid‑former.
+* **AC/DC sensing (dual ADC input)**  
+Samples the AC and DC waveforms at 3 MHz and compares it to the internal reference.
+* **AC/DC Dual Loop control**  
+Forms linear and stable control loops without multipliers.
+* **DC‑link dump‑load PWM output**  
+Drives a single high‑voltage FET with enforced **4 µs minimum ON/OFF** times.
+* **Four real‑time tuning gates**  
+External PWM or logic‑level inputs adjust loop behavior on the fly:
 
-- **AC/DC sensing (dual ADC input)**  
-  Samples the AC and DC waveforms at 3 MHz and compares it to the internal reference.
+  * `dc\\\_vref` — DC Link Reference voltage input
+  * `gain\\\_sine` — trims generated sine amplitude
+  * `gain\\\_out` — Output gain trim
+  * `gain\\\_ac` — AC gain
+  * `gain\\\_dc` — DC gain
+  * `mode\\\_ac` — select 1/4 cycle AC operation
+* **Safe, simple power topology**  
+Intended for use with a **rectified 240 V AC DC‑link** (VFD‑style front end) and a resistive dump load such as a water heater.
 
-- **AC/DC Dual Loop control**  
-  Forms linear and stable control loops without multipliers.
+![System Diagram](system_diagram.png)
 
-- **DC‑link dump‑load PWM output**  
-  Drives a single high‑voltage FET with enforced **4 µs minimum ON/OFF** times.
-
-- **Four real‑time tuning gates**  
-  External PWM or logic‑level inputs adjust loop behavior on the fly:
-  - `dc_vref` — DC Link Reference voltage input  
-  - `gain_sine` — trims generated sine amplitude  
-  - `gain_out` — Output gain trim  
-  - `gain_ac` — AC gain  
-  - `gain_dc` — DC gain 
-  - `mode_ac` — select 1/4 cycle AC operation 
-
-- **Safe, simple power topology**  
-  Intended for use with a **rectified 240 V AC DC‑link** (VFD‑style front end) and a resistive dump load such as a water heater.
-
----
+\---
 
 ## **I/O Summary**
 
 ### **Inputs (`ui`)**
+
 ```
-ui[0]  ac_sdata      # AC ADC serial data input (3 MHz sample stream)
-ui[1]  dc_sdata      # DC ADC serial data input (3 MHz sample stream)
-ui[2]  dc_vref       # DC Vref target voltage for DC Link
-ui[3]  gain_sine     # Sine amplitude trim (generation gain)
-ui[4]  gain_out      # Dump-PWM gain trim (max dump power)
-ui[5]  gain_ac       # AC Gain trim
-ui[6]  error_dc      # DC Gain trim
-ui[7]  ac_mode       # Select 1/4 cycle ac mode
+ui\\\[0]  ac\\\_sdata      # AC ADC serial data input (3 MHz sample stream)
+ui\\\[1]  dc\\\_sdata      # DC ADC serial data input (3 MHz sample stream)
+ui\\\[2]  dc\\\_vref       # DC Vref target voltage for DC Link
+ui\\\[3]  gain\\\_sine     # Sine amplitude trim (generation gain)
+ui\\\[4]  gain\\\_out      # Dump-PWM gain trim (max dump power)
+ui\\\[5]  gain\\\_ac       # AC Gain trim
+ui\\\[6]  error\\\_dc      # DC Gain trim
+ui\\\[7]  ac\\\_mode       # Select 1/4 cycle ac mode
 
 ```
 
 ### **Outputs (`uo`)**
+
 ```
-uo[0]  adc_cs          # ADC chip-select / sample strobe
-uo[1]  gen_pwm_p       # Grid-former PWM (positive leg)
-uo[2]  gen_pwm_n       # Grid-former PWM (negative leg)
-uo[3]  dump_pwm        # DC-link dump FET PWM (4 µs min pulse width)
-uo[4]  (unused)
-uo[5]  (unused)
-uo[6]  (unused)
-uo[7]  (unused)
+uo\\\[0]  adc\\\_cs          # ADC chip-select / sample strobe
+uo\\\[1]  gen\\\_pwm\\\_p       # Grid-former PWM (positive leg)
+uo\\\[2]  gen\\\_pwm\\\_n       # Grid-former PWM (negative leg)
+uo\\\[3]  dump\\\_pwm        # DC-link dump FET PWM (4 µs min pulse width)
+uo\\\[4]  (unused)
+uo\\\[5]  (unused)
+uo\\\[6]  (unused)
+uo\\\[7]  (unused)
 ```
 
----
+\---
 
 ## **Intended Use Case**
 
 This ASIC is designed for experimental AC micro‑systems where:
 
-- a **low‑power grid‑former** establishes the AC waveform  
-- **PV inverters** inject unpredictable power
-- **AC Appliances** use less energy than available
-- a **DC‑link dump load** must absorb surplus energy  
-- the system must remain stable without external controllers  
+* a **low‑power grid‑former** establishes the AC waveform
+* **PV inverters** inject unpredictable power
+* **AC Appliances** use less energy than available
+* a **DC‑link dump load** must absorb surplus energy
+* the system must remain stable without external controllers
 
 The chip maintains long‑term phase and amplitude alignment by modulating the dump load based solely on AC‑side sensing.
 
----
+\---
 
 ## **Status**
 
-- [Preliminary Datasheet](GPC-01_Datasheet.pdf) 
-- RTL complete  
-- Clean synthesis  
-- Verified P&R on **1×2 tile**  
-- Ready for TinyTapeout submission  
-- verification pending
-- validation pending
-  
+* [Preliminary Datasheet](GPC-01_Datasheet.pdf)
+* RTL complete
+* Clean synthesis
+* Verified P\&R on **1×2 tile**
+* Ready for TinyTapeout submission
+* verification pending
+* validation pending
+
+![Development Board](dev_board.png)
+
 ## Why is it?
 
 Use my 10kw grid-tied solar system to power my home on the second day of a power outage.
 
 A grid tied solar system becomes useless without the grid. Hybrid systems involve using batteries fix this, but are a big expense. If a grid tied solar system is disconnected from the grid and provided with a simulated grid the solar system will generate hydro AC. The issue is that grid tied inverters work by maximizing the energy delivery without restriction knowing that the grid can accept it, and it will vary with available sunlight.
-If the energy is not dissipated the voltage and frequiency of the simulated grid will be driven out of spec and the grid tied inverters will shutdown (usually for at least 5 min). 
+If the energy is not dissipated the voltage and frequiency of the simulated grid will be driven out of spec and the grid tied inverters will shutdown (usually for at least 5 min).
 
 The energy from the sun needs to be always and exactly dissipated. This dissipation can be partially done by any electrical devices in the home, but something else needs dissipate the remainder. Heating water is a good way of dumping energy.
 
@@ -119,13 +123,12 @@ Tests I used to bring up the RTL with.
 
 It will need a real or model system to test:
 
-    -Grid-tied solar system, sunlight
-    -Hbridge and drivers
-    -Step up transformer
-    -Bridge Rectifier, DCLink Capactors
-    -Dump FET and driver
-    -Resistive Water Heater, water
-    -ADC with isolated instrumentation.
-    -external control panel (pwm base loop controls))
-
+&#x20;   -Grid-tied solar system, sunlight
+-Hbridge and drivers
+-Step up transformer
+-Bridge Rectifier, DCLink Capactors
+-Dump FET and driver
+-Resistive Water Heater, water
+-ADC with isolated instrumentation.
+-external control panel (pwm base loop controls))
 
