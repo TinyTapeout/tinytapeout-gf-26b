@@ -1,0 +1,53 @@
+---
+yaml_version: 6
+
+# Tiny Tapeout project information
+project:
+  urn: "github.com/matanelk96/ASIC-ALU-MK"
+  title: "8-bit Interactive ALU"
+  author: "Matanel Kadosh"
+  discord: ""
+  description: "An 8-bit Arithmetic Logic Unit with internal registers and multiplexed output for result/carry."
+  language: "Verilog"
+  clock_hz: 10000000 # 10 MHz
+  
+  # How many tiles your design occupies? A single tile is 1x1.
+  tiles: "1x1"
+  
+  # Top level module name (Must match the Verilog module name)
+  top_module: "tt_um_alu"
+  
+  # The source files
+  source_files:
+    - "tt_um_alu.v"
+
+pinout:
+  # PMOD 1: ui_in (8-bit Input Bus)
+  ui[0]: "Data In Bit 0 (LSB)"
+  ui[1]: "Data In Bit 1"
+  ui[2]: "Data In Bit 2"
+  ui[3]: "Data In Bit 3"
+  ui[4]: "Data In Bit 4"
+  ui[5]: "Data In Bit 5"
+  ui[6]: "Data In Bit 6"
+  ui[7]: "Data In Bit 7 (MSB)"
+
+  # PMOD 2: uo_out (8-bit Output Bus)
+  uo[0]: "Result Bit 0 / Carry Flag (When Out_Sel=1)"
+  uo[1]: "Result Bit 1"
+  uo[2]: "Result Bit 2"
+  uo[3]: "Result Bit 3"
+  uo[4]: "Result Bit 4"
+  uo[5]: "Result Bit 5"
+  uo[6]: "Result Bit 6"
+  uo[7]: "Result Bit 7 (MSB)"
+
+  # PMOD 3: uio (Bidirectional set to Input - Control Bus)
+  uio[0]: "Load A (Trigger)"
+  uio[1]: "Load B (Trigger)"
+  uio[2]: "ALU_OP [0]"
+  uio[3]: "ALU_OP [1]"
+  uio[4]: "ALU_OP [2]"
+  uio[5]: "ALU_OP [3]"
+  uio[6]: "Out_Sel (0=Result, 1=Flags)"
+  uio[7]: "Reset (Active High)"
