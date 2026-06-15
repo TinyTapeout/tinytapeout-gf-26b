@@ -1,0 +1,51 @@
+# Tiny Tapeout project information
+project:
+  title:        "CWRU CHIPS Simple Counter with 7-segment Display"
+  author:       "Andrew Chen, John Paul Magbitang"
+  discord:      "joopyyy, andr.ewww10"
+  description:  "Simple counter demo on a RISC-V CPU with 7-segment display output"
+  language:     "Verilog"
+  clock_hz:     5
+
+  tiles: "1x2"
+
+  top_module:  "tt_um_cwru_cpu"
+
+  source_files:
+    - "cwru_alu.v"
+    - "cwru_control_unit.v"
+    - "cwru_imm_gen.v"
+    - "cwru_instr_mem.v"
+    - "cwru_register_file.v"
+    - "cwru_program_counter.v"
+    - "cwru_display.v"
+    - "project.v"
+
+pinout:
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+  uo[0]: "SEG_A"
+  uo[1]: "SEG_B"
+  uo[2]: "SEG_C"
+  uo[3]: "SEG_D"
+  uo[4]: "SEG_E"
+  uo[5]: "SEG_F"
+  uo[6]: "SEG_G"
+  uo[7]: ""
+  uio[0]: "ADE"
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
