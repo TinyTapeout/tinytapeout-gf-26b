@@ -1,0 +1,48 @@
+138. Printing statistics.
+
+=== tt_um_jte_cordic ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      373        - wires
+      408        - wire bits
+       45        - public wires
+       80        - public wire bits
+        8        - ports
+       43        - port bits
+      389 9.57E+03 cells
+       11  193.178   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        6  131.712   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__and4_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+       42  737.587   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        3   72.442   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        4   79.027   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        2   26.342   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       30  263.424   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       37  2355.45   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       16  526.848   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+        9  632.218   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+       43  471.968   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        5   76.832   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+        1   19.757   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+       25   329.28   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       10  175.616   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       38  667.341   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        6  158.054   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        1   21.952   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        9  217.325   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        1   32.928   gf180mcu_fd_sc_mcu7t5v0__oai33_1
+        7  122.931   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        8   70.246   gf180mcu_fd_sc_mcu7t5v0__tieh
+       16  456.602   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        2   105.37   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+       45 1.19E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        6  302.938   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_jte_cordic': 9571.072000
+     of which used for sequential elements: 2355.449600 (24.61%)
+
