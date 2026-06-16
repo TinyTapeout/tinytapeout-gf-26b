@@ -11,41 +11,41 @@
       374        - public wire bits
         8        - ports
        43        - port bits
-     2569 6.42E+04 cells
-      105 1.84E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
-       26  570.752   gf180mcu_fd_sc_mcu7t5v0__and3_1
-        4   96.589   gf180mcu_fd_sc_mcu7t5v0__and4_1
-       29  636.608   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
-      285 5.01E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-       18   434.65   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
-        8  245.862   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
-       22   434.65   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+     2569 6.41E+04 cells
+      102 1.79E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       28  614.656   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        3   72.442   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       47 1.03E+03   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      260 4.57E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       13  313.914   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       11  338.061   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+       23  454.406   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
         4   52.685   gf180mcu_fd_sc_mcu7t5v0__buf_1
-      176 1.55E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      178 1.56E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
       331 2.11E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
-       25    823.2   gf180mcu_fd_sc_mcu7t5v0__mux2_2
-       42 2.95E+03   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+       27  889.056   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+       40 2.81E+03   gf180mcu_fd_sc_mcu7t5v0__mux4_1
       309 3.39E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
-       45  691.488   gf180mcu_fd_sc_mcu7t5v0__nand3_1
-       10  197.568   gf180mcu_fd_sc_mcu7t5v0__nand4_1
-      271 3.57E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
-       50   878.08   gf180mcu_fd_sc_mcu7t5v0__nor3_1
-       12  263.424   gf180mcu_fd_sc_mcu7t5v0__nor4_1
-       40   878.08   gf180mcu_fd_sc_mcu7t5v0__oai211_1
-      228    4E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
-       10  263.424   gf180mcu_fd_sc_mcu7t5v0__oai221_1
-       19  417.088   gf180mcu_fd_sc_mcu7t5v0__oai22_1
-       28  676.122   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       46  706.854   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+        6  118.541   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      281  3.7E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       56   983.45   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       17  373.184   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       37  812.224   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      230 4.04E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        8  210.739   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        4   87.808   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       30  724.416   gf180mcu_fd_sc_mcu7t5v0__oai31_1
         2   52.685   gf180mcu_fd_sc_mcu7t5v0__oai32_1
-       54  948.326   gf180mcu_fd_sc_mcu7t5v0__or2_1
-       12  263.424   gf180mcu_fd_sc_mcu7t5v0__or3_1
-       11  289.766   gf180mcu_fd_sc_mcu7t5v0__or4_1
+       51  895.642   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       17  373.184   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        9  237.082   gf180mcu_fd_sc_mcu7t5v0__or4_1
        20  175.616   gf180mcu_fd_sc_mcu7t5v0__tiel
-       80 2.28E+03   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
-       14  737.587   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
-      233 6.14E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+       99 2.83E+03   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       11  579.533   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+      223 5.87E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
        46 2.32E+03   gf180mcu_fd_sc_mcu7t5v0__xor3_1
 
-   Chip area for module '\tt_um_60hz_load': 64152.524800
-     of which used for sequential elements: 21071.724800 (32.85%)
+   Chip area for module '\tt_um_60hz_load': 64053.740800
+     of which used for sequential elements: 21071.724800 (32.90%)
 
