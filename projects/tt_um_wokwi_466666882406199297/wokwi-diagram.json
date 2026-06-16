@@ -1,0 +1,1543 @@
+{
+  "version": 1,
+  "author": "Noah Perez",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-dip-switch-8",
+      "id": "sw1",
+      "top": 2175.5,
+      "left": 4590.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-gnd", "id": "pwr1", "top": 2281.15, "left": 5284.6, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "pwr2", "top": 2045.56, "left": 4588.8, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": 2174.71,
+      "left": 5271.08,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin1",
+      "top": 1029.47,
+      "left": 4430.4,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "board-tt-block-output",
+      "id": "ttout1",
+      "top": 2152.67,
+      "left": 4977.6,
+      "attrs": { "verilogRole": "output" }
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or5",
+      "top": 1872.2,
+      "left": 4877,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text10",
+      "top": 1910.4,
+      "left": 4905.6,
+      "attrs": { "text": "A" }
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or10",
+      "top": 2285,
+      "left": 3609.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin2",
+      "top": 1471.07,
+      "left": 3076.8,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin3",
+      "top": 2776.67,
+      "left": 2884.8,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text14",
+      "top": 2323.2,
+      "left": 3638.4,
+      "attrs": { "text": "B" }
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or13",
+      "top": 3485,
+      "left": 3360.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text19",
+      "top": 3523.2,
+      "left": 3388.8,
+      "attrs": { "text": "C" }
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin4",
+      "top": 1480.67,
+      "left": 5544,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or17",
+      "top": 2265.8,
+      "left": 6057.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text25",
+      "top": 2304,
+      "left": 6086.4,
+      "attrs": { "text": "D" }
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin5",
+      "top": 2786.27,
+      "left": 5640,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or20",
+      "top": 3561.8,
+      "left": 6029,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin6",
+      "top": 3035.87,
+      "left": 4833.6,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin7",
+      "top": 3227.87,
+      "left": 3816,
+      "attrs": { "verilogRole": "input" }
+    },
+    { "type": "wokwi-text", "id": "text30", "top": 3600, "left": 6048, "attrs": { "text": "E" } },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or23",
+      "top": 3840.2,
+      "left": 5289.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or26",
+      "top": 4013,
+      "left": 4262.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text31",
+      "top": 3878.4,
+      "left": 5318.4,
+      "attrs": { "text": "F" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text41",
+      "top": 4051.2,
+      "left": 4291.2,
+      "attrs": { "text": "G" }
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not3",
+      "top": 1161.8,
+      "left": 4541,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and3",
+      "top": 1411.4,
+      "left": 4550.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and4",
+      "top": 1411.4,
+      "left": 4608.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and5",
+      "top": 1421,
+      "left": 4723.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not4",
+      "top": 1161.8,
+      "left": 4733,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and6",
+      "top": 1421,
+      "left": 4781,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not5",
+      "top": 1161.8,
+      "left": 4790.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or3",
+      "top": 1555.4,
+      "left": 4579.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or4",
+      "top": 1565,
+      "left": 4752.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and7",
+      "top": 1421,
+      "left": 4934.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and8",
+      "top": 1267.4,
+      "left": 4963.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not43",
+      "top": 1161.8,
+      "left": 4953.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not44",
+      "top": 1161.8,
+      "left": 4973,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not45",
+      "top": 1161.8,
+      "left": 4905.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not46",
+      "top": 1161.8,
+      "left": 5040.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and51",
+      "top": 1267.4,
+      "left": 5097.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and52",
+      "top": 1421,
+      "left": 5069,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and53",
+      "top": 1421,
+      "left": 5203.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and54",
+      "top": 1267.4,
+      "left": 5213,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not47",
+      "top": 1152.2,
+      "left": 5222.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not48",
+      "top": 1152.2,
+      "left": 5203.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or28",
+      "top": 1565,
+      "left": 5001.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or29",
+      "top": 1689.8,
+      "left": 5107.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or30",
+      "top": 1699.4,
+      "left": 4665.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not24",
+      "top": 1641.8,
+      "left": 5683.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not25",
+      "top": 1641.8,
+      "left": 5702.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and2",
+      "top": 1757,
+      "left": 5693,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and26",
+      "top": 1881.8,
+      "left": 5683.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not26",
+      "top": 1641.8,
+      "left": 5789,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not27",
+      "top": 1641.8,
+      "left": 5817.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and27",
+      "top": 1757,
+      "left": 5808.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and28",
+      "top": 1881.8,
+      "left": 5798.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or2",
+      "top": 2006.6,
+      "left": 5741,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not40",
+      "top": 1641.8,
+      "left": 5971.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and29",
+      "top": 1757,
+      "left": 5961.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and30",
+      "top": 1881.8,
+      "left": 5952.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not28",
+      "top": 1641.8,
+      "left": 6048.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and31",
+      "top": 1757,
+      "left": 6057.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and32",
+      "top": 1881.8,
+      "left": 6048.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or14",
+      "top": 2006.6,
+      "left": 6000.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not42",
+      "top": 1641.8,
+      "left": 6192.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and33",
+      "top": 1757,
+      "left": 6211.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and34",
+      "top": 1881.8,
+      "left": 6201.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not41",
+      "top": 1641.8,
+      "left": 6297.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not49",
+      "top": 1641.8,
+      "left": 6317,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and35",
+      "top": 1757,
+      "left": 6307.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and55",
+      "top": 1881.8,
+      "left": 6297.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or15",
+      "top": 2006.6,
+      "left": 6249.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or16",
+      "top": 2131.4,
+      "left": 5865.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not2",
+      "top": 1641.8,
+      "left": 6288.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and36",
+      "top": 3158.6,
+      "left": 5779.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and37",
+      "top": 3158.6,
+      "left": 5856.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and38",
+      "top": 3158.6,
+      "left": 5961.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and39",
+      "top": 3158.6,
+      "left": 6038.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not30",
+      "top": 2928.2,
+      "left": 5971.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not50",
+      "top": 2928.2,
+      "left": 6048.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and56",
+      "top": 3158.6,
+      "left": 6153.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and57",
+      "top": 3053,
+      "left": 6163.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not51",
+      "top": 2928.2,
+      "left": 6173,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not52",
+      "top": 2928.2,
+      "left": 6153.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not53",
+      "top": 2928.2,
+      "left": 6144.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or18",
+      "top": 3293,
+      "left": 5817.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or19",
+      "top": 3293,
+      "left": 6000.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or31",
+      "top": 3437,
+      "left": 5904.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not31",
+      "top": 3187.4,
+      "left": 5001.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not32",
+      "top": 3187.4,
+      "left": 5021,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and40",
+      "top": 3417.8,
+      "left": 5011.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and41",
+      "top": 3417.8,
+      "left": 5088.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and42",
+      "top": 3417.8,
+      "left": 5213,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and43",
+      "top": 3417.8,
+      "left": 5289.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and58",
+      "top": 3417.8,
+      "left": 5414.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and59",
+      "top": 3302.6,
+      "left": 5424.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not57",
+      "top": 3187.4,
+      "left": 5433.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or21",
+      "top": 3571.4,
+      "left": 5049.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or22",
+      "top": 3571.4,
+      "left": 5251.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or32",
+      "top": 3715.4,
+      "left": 5155.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not35",
+      "top": 3360.2,
+      "left": 3984.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and45",
+      "top": 3609.8,
+      "left": 3974.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not36",
+      "top": 3360.2,
+      "left": 4061,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and46",
+      "top": 3609.8,
+      "left": 4051.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and47",
+      "top": 3609.8,
+      "left": 4166.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or24",
+      "top": 3753.8,
+      "left": 4013,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or25",
+      "top": 3753.8,
+      "left": 4205,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or27",
+      "top": 3878.6,
+      "left": 4109,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not6",
+      "top": 3360.2,
+      "left": 4349,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not22",
+      "top": 3360.2,
+      "left": 4377.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and50",
+      "top": 3485,
+      "left": 4368.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and60",
+      "top": 3609.8,
+      "left": 4358.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not23",
+      "top": 3360.2,
+      "left": 4233.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and48",
+      "top": 3609.8,
+      "left": 4243.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not29",
+      "top": 2928.2,
+      "left": 3033.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and22",
+      "top": 3072.2,
+      "left": 3043.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not37",
+      "top": 2928.2,
+      "left": 3149,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and23",
+      "top": 3072.2,
+      "left": 3139.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not38",
+      "top": 2928.2,
+      "left": 3254.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and24",
+      "top": 3072.2,
+      "left": 3264.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or11",
+      "top": 3216.2,
+      "left": 3091.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not39",
+      "top": 2928.2,
+      "left": 3350.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and25",
+      "top": 3072.2,
+      "left": 3360.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not55",
+      "top": 2928.2,
+      "left": 3369.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not56",
+      "top": 2928.2,
+      "left": 3475.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and49",
+      "top": 3072.2,
+      "left": 3485,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or12",
+      "top": 3216.2,
+      "left": 3312.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or33",
+      "top": 3350.6,
+      "left": 3197,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not11",
+      "top": 1613,
+      "left": 3245,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and9",
+      "top": 1843.4,
+      "left": 3254.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not12",
+      "top": 1613,
+      "left": 3264.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not13",
+      "top": 1613,
+      "left": 3360.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not14",
+      "top": 1613,
+      "left": 3379.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and10",
+      "top": 1843.4,
+      "left": 3369.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or6",
+      "top": 1977.8,
+      "left": 3312.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and11",
+      "top": 1843.4,
+      "left": 3485,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and12",
+      "top": 1728.2,
+      "left": 3494.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not15",
+      "top": 1613,
+      "left": 3504.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not16",
+      "top": 1613,
+      "left": 3485,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and13",
+      "top": 1843.4,
+      "left": 3600.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and14",
+      "top": 1728.2,
+      "left": 3609.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not18",
+      "top": 1613,
+      "left": 3600.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and15",
+      "top": 1843.4,
+      "left": 3734.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and16",
+      "top": 1728.2,
+      "left": 3744.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not19",
+      "top": 1613,
+      "left": 3753.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not20",
+      "top": 1613,
+      "left": 3734.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and17",
+      "top": 1843.4,
+      "left": 3849.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-and-2",
+      "id": "and18",
+      "top": 1728.2,
+      "left": 3859.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not17",
+      "top": 1613,
+      "left": 3725,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not59",
+      "top": 1613,
+      "left": 3840.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or7",
+      "top": 1977.8,
+      "left": 3542.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or8",
+      "top": 1977.8,
+      "left": 3792.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-or-2",
+      "id": "or9",
+      "top": 2112.2,
+      "left": 3427.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not9",
+      "top": 3187.4,
+      "left": 5405,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not7",
+      "top": 3187.4,
+      "left": 5097.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not8",
+      "top": 3187.4,
+      "left": 5299.4,
+      "rotate": 90,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "pwr2:VCC", "sw1:8a", "red", [ "v0" ] ],
+    [ "pwr2:VCC", "sw1:7a", "red", [ "v0" ] ],
+    [ "pwr2:VCC", "sw1:6a", "red", [ "v0" ] ],
+    [ "pwr2:VCC", "sw1:5a", "red", [ "v0" ] ],
+    [ "pwr2:VCC", "sw1:4a", "red", [ "v0" ] ],
+    [ "pwr2:VCC", "sw1:1a", "red", [ "v0" ] ],
+    [ "pwr2:VCC", "sw1:2a", "red", [ "v0" ] ],
+    [ "pwr2:VCC", "sw1:3a", "red", [ "v0" ] ],
+    [ "ttout1:EXTOUT0", "sevseg1:A", "black", [ "h9.6", "v-48", "h216.4" ] ],
+    [ "ttout1:EXTOUT7", "sevseg1:DP", "gray", [ "h9.6", "v48", "h226" ] ],
+    [ "pwr1:GND", "sevseg1:COM.1", "black", [ "v0" ] ],
+    [ "sw1:1b", "ttin1:EXTIN0", "black", [ "v-316.8", "h-317.1", "v-777.6" ] ],
+    [ "sw1:2b", "ttin1:EXTIN1", "black", [ "v-336", "h-307.5", "v-758.4" ] ],
+    [ "ttin1:EXTIN2", "sw1:3b", "black", [ "h-76.8", "v739.2", "h297.9" ] ],
+    [ "ttin1:EXTIN3", "sw1:4b", "black", [ "h-67.2", "v720", "h288.3" ] ],
+    [ "sw1:5b", "ttin1:EXTIN4", "black", [ "v-393.6", "h-278.7", "v-700.8" ] ],
+    [ "ttin1:EXTIN5", "sw1:6b", "black", [ "h-48", "v681.6", "h269.1" ] ],
+    [ "sw1:7b", "ttin1:EXTIN6", "black", [ "v-432", "h-259.5", "v-662.4" ] ],
+    [ "sw1:8b", "ttin1:EXTIN7", "black", [ "v-451.2", "h-249.9", "v-643.2" ] ],
+    [ "or5:OUT", "ttout1:OUT0", "black", [ "v38.4", "v201.6" ] ],
+    [ "ttout1:OUT1", "or10:OUT", "red", [ "h-67.2", "v220.8", "h-1257.6", "v-57.6" ] ],
+    [ "sw1:8b", "ttin2:EXTIN7", "red", [ "h9.3", "v192", "h-1795.2", "v-844.8" ] ],
+    [ "sw1:7b", "ttin2:EXTIN6", "red", [ "h9.3", "v211.2", "h-1804.8", "v-864" ] ],
+    [ "sw1:6b", "ttin2:EXTIN5", "red", [ "h9.3", "v230.4", "h-1814.4", "v-883.2" ] ],
+    [ "sw1:5b", "ttin2:EXTIN4", "red", [ "h9.3", "v249.6", "h-1824", "v-902.4" ] ],
+    [ "sw1:4b", "ttin2:EXTIN3", "red", [ "h9.3", "v268.8", "h-1833.6", "v-921.6" ] ],
+    [ "sw1:3b", "ttin2:EXTIN2", "red", [ "h9.3", "v288", "h-1843.2", "v-940.8" ] ],
+    [ "sw1:2b", "ttin2:EXTIN1", "red", [ "h9.3", "v307.2", "h-1852.8", "v-960" ] ],
+    [ "sw1:1b", "ttin2:EXTIN0", "red", [ "h9.3", "v326.4", "h-1862.4", "v-979.2" ] ],
+    [ "sw1:7b", "ttin3:EXTIN6", "orange", [ "h18.9", "v336", "h-1872", "v316.8" ] ],
+    [ "sw1:6b", "ttin3:EXTIN5", "orange", [ "h18.9", "v355.2", "h-1862.4", "v297.6" ] ],
+    [ "sw1:5b", "ttin3:EXTIN4", "orange", [ "h18.9", "v374.4", "h-1852.8", "v278.4" ] ],
+    [ "sw1:4b", "ttin3:EXTIN3", "orange", [ "h18.9", "v393.6", "h-1843.2", "v259.2" ] ],
+    [ "sw1:3b", "ttin3:EXTIN2", "orange", [ "h18.9", "v412.8", "h-1833.6", "v240" ] ],
+    [ "sw1:2b", "ttin3:EXTIN1", "orange", [ "h18.9", "v432", "h-1824", "v220.8" ] ],
+    [ "sw1:1b", "ttin3:EXTIN0", "orange", [ "h18.9", "v451.2", "h-1814.4", "v201.6" ] ],
+    [ "or13:OUT", "ttout1:OUT2", "orange", [ "v9.6", "h240", "v-1046.4", "h1276.8", "v-316.8" ] ],
+    [ "sw1:1b", "ttin4:EXTIN0", "yellow", [ "h38.1", "v259.2", "h748.8", "v-1065.6" ] ],
+    [ "sw1:2b", "ttin4:EXTIN1", "yellow", [ "h38.1", "v259.2", "h758.4", "v-902.4" ] ],
+    [ "ttin4:EXTIN2", "sw1:3b", "yellow", [ "h-86.4", "v902.4", "h-768", "v-259.2" ] ],
+    [ "ttin4:EXTIN3", "sw1:4b", "yellow", [ "h-76.8", "v902.4", "h-777.6", "v-259.2" ] ],
+    [ "ttin4:EXTIN4", "sw1:5b", "yellow", [ "h-67.2", "v902.4", "h-787.2", "v-259.2" ] ],
+    [ "ttin4:EXTIN6", "sw1:7b", "yellow", [ "h-48", "v902.4", "h-806.4", "v-259.2" ] ],
+    [ "ttin4:EXTIN7", "sw1:8b", "yellow", [ "h-38.4", "v902.4", "h-816", "v-259.2" ] ],
+    [ "or17:OUT", "ttout1:OUT3", "gold", [ "v76.8", "h-1171.2", "v-201.6" ] ],
+    [ "sw1:1b", "ttin5:EXTIN0", "green", [ "h47.7", "v384", "h806.4", "v278.4" ] ],
+    [ "sw1:2b", "ttin5:EXTIN1", "green", [ "h47.7", "v384", "h796.8", "v278.4" ] ],
+    [ "sw1:3b", "ttin5:EXTIN2", "green", [ "h47.7", "v384", "h787.2", "v278.4" ] ],
+    [ "sw1:4b", "ttin5:EXTIN3", "green", [ "h47.7", "v384", "h777.6", "v278.4" ] ],
+    [ "sw1:5b", "ttin5:EXTIN4", "green", [ "h47.7", "v384", "h768", "v278.4" ] ],
+    [ "sw1:6b", "ttin5:EXTIN5", "green", [ "h47.7", "v384", "h758.4", "v278.4" ] ],
+    [ "sw1:7b", "ttin5:EXTIN6", "green", [ "h47.7", "v384", "h748.8", "v278.4" ] ],
+    [ "sw1:8b", "ttin5:EXTIN7", "green", [ "h47.7", "v384", "h739.2", "v278.4" ] ],
+    [ "or20:OUT", "ttout1:OUT4", "green", [ "v48", "h206.8", "v-1152", "h-1339.6", "v-307.2" ] ],
+    [ "sw1:1b", "ttin6:EXTIN0", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:2b", "ttin6:EXTIN1", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:3b", "ttin6:EXTIN2", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:4b", "ttin6:EXTIN3", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:5b", "ttin6:EXTIN4", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:7b", "ttin6:EXTIN6", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:8b", "ttin6:EXTIN7", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:6b", "ttin6:EXTIN5", "blue", [ "h57.3", "v816", "v182.4" ] ],
+    [ "sw1:1b", "ttin7:EXTIN0", "violet", [ "h28.5", "v979.2", "h-902.4", "v124.8" ] ],
+    [ "sw1:2b", "ttin7:EXTIN1", "violet", [ "h28.5", "v960", "h-912", "v144" ] ],
+    [ "sw1:8b", "ttin7:EXTIN7", "violet", [ "h28.5", "v844.8", "h-969.6", "v259.2" ] ],
+    [ "sw1:7b", "ttin7:EXTIN6", "violet", [ "h28.5", "v864", "h-960", "v240" ] ],
+    [ "sw1:6b", "ttin7:EXTIN5", "violet", [ "h28.5", "v883.2", "h-950.4", "v220.8" ] ],
+    [ "sw1:5b", "ttin7:EXTIN4", "violet", [ "h28.5", "v902.4", "h-940.8", "v201.6" ] ],
+    [ "sw1:4b", "ttin7:EXTIN3", "violet", [ "h28.5", "v921.6", "h-931.2", "v182.4" ] ],
+    [ "sw1:3b", "ttin7:EXTIN2", "violet", [ "h28.5", "v940.8", "h-921.6", "v163.2" ] ],
+    [ "or23:OUT", "ttout1:OUT5", "blue", [ "v9.6", "h-633.6", "v-1392", "h249.6", "v-297.6" ] ],
+    [ "ttout1:OUT6", "or26:OUT", "violet", [ "h-19.2", "v297.6", "h-278.4", "v1536" ] ],
+    [ "not3:OUT", "and3:B", "green", [ "h0" ] ],
+    [ "not3:IN", "ttin1:IN0", "magenta", [ "v-124.67" ] ],
+    [ "and3:A", "ttin1:IN2", "yellow", [ "v0" ] ],
+    [ "ttin1:IN1", "and4:B", "green", [ "h0" ] ],
+    [ "ttin1:IN2", "and4:A", "yellow", [ "h0" ] ],
+    [ "not4:OUT", "and5:A", "green", [ "h0" ] ],
+    [ "ttin1:IN3", "not4:IN", "red", [ "h0" ] ],
+    [ "ttin1:IN2", "and5:B", "yellow", [ "h0" ] ],
+    [ "not5:OUT", "and6:A", "green", [ "h0" ] ],
+    [ "ttin1:IN3", "not5:IN", "red", [ "h0" ] ],
+    [ "ttin1:IN0", "and6:B", "magenta", [ "h288", "v316.8" ] ],
+    [ "or3:B", "and3:OUT", "green", [ "v-9.6", "h-19.2" ] ],
+    [ "and5:OUT", "or4:B", "green", [ "v38.4", "h19.2" ] ],
+    [ "and6:OUT", "or4:A", "green", [ "v38.4", "h-19.2" ] ],
+    [ "and4:OUT", "or3:A", "green", [ "v38.4", "h-19.2" ] ],
+    [ "not44:OUT", "and8:A", "green", [ "h0" ] ],
+    [ "not43:OUT", "and8:B", "green", [ "h0", "v57.6" ] ],
+    [ "and8:OUT", "and7:A", "green", [ "v48", "h-19.2" ] ],
+    [ "not45:OUT", "and7:B", "green", [ "v153.6", "h19.2" ] ],
+    [ "ttin1:IN0", "not45:IN", "magenta", [ "h0" ] ],
+    [ "ttin1:IN1", "not43:IN", "green", [ "h0" ] ],
+    [ "ttin1:IN3", "not44:IN", "red", [ "h0" ] ],
+    [ "and51:OUT", "and52:A", "green", [ "v48", "h-19.2" ] ],
+    [ "ttin1:IN0", "not46:IN", "magenta", [ "h0" ] ],
+    [ "ttin1:IN1", "and51:B", "green", [ "h0" ] ],
+    [ "ttin1:IN3", "and51:A", "red", [ "h0" ] ],
+    [ "and54:OUT", "and53:A", "green", [ "v0" ] ],
+    [ "not48:OUT", "and54:B", "green", [ "h0" ] ],
+    [ "not47:OUT", "and54:A", "green", [ "h0" ] ],
+    [ "ttin1:IN0", "and53:B", "magenta", [ "h0" ] ],
+    [ "ttin1:IN1", "not48:IN", "green", [ "h0" ] ],
+    [ "ttin1:IN2", "not47:IN", "yellow", [ "h0" ] ],
+    [ "and7:OUT", "or28:B", "green", [ "v38.4", "h57.6" ] ],
+    [ "and52:OUT", "or28:A", "green", [ "v38.4", "h-57.6" ] ],
+    [ "or3:OUT", "or30:B", "green", [ "v38.4", "h115.2" ] ],
+    [ "or4:OUT", "or30:A", "green", [ "v28.8", "h-76.8" ] ],
+    [ "or28:OUT", "or29:B", "green", [ "v19.2", "h105.6" ] ],
+    [ "and53:OUT", "or29:A", "green", [ "v163.2", "h-105.6" ] ],
+    [ "or30:OUT", "or5:B", "green", [ "v67.2", "h201.6" ] ],
+    [ "or29:OUT", "or5:A", "green", [ "v76.8", "h-220.8" ] ],
+    [ "not24:OUT", "and2:B", "green", [ "h0" ] ],
+    [ "not25:OUT", "and2:A", "green", [ "h0" ] ],
+    [ "and2:OUT", "and26:A", "green", [ "v0" ] ],
+    [ "ttin4:IN2", "not24:IN", "yellow", [ "h0" ] ],
+    [ "ttin4:IN3", "not25:IN", "red", [ "h0" ] ],
+    [ "ttin4:IN0", "and26:B", "magenta", [ "h0" ] ],
+    [ "not27:OUT", "and27:A", "green", [ "h0" ] ],
+    [ "and27:OUT", "and28:A", "green", [ "v0" ] ],
+    [ "not26:OUT", "and28:B", "green", [ "h0" ] ],
+    [ "ttin4:IN0", "not26:IN", "magenta", [ "h0" ] ],
+    [ "ttin4:IN2", "and27:B", "yellow", [ "h0" ] ],
+    [ "ttin4:IN3", "not27:IN", "red", [ "h0" ] ],
+    [ "and26:OUT", "or2:B", "green", [ "v9.6", "h48" ] ],
+    [ "and28:OUT", "or2:A", "green", [ "v9.6", "h-48" ] ],
+    [ "not40:OUT", "and29:A", "green", [ "h0" ] ],
+    [ "and29:OUT", "and30:A", "green", [ "v0" ] ],
+    [ "ttin4:IN3", "not40:IN", "red", [ "h0" ] ],
+    [ "ttin4:IN2", "and29:B", "yellow", [ "h0" ] ],
+    [ "ttin4:IN1", "and30:B", "green", [ "h0" ] ],
+    [ "and31:OUT", "and32:A", "green", [ "v0" ] ],
+    [ "not28:OUT", "and31:B", "green", [ "h0" ] ],
+    [ "ttin4:IN1", "and32:B", "green", [ "h0" ] ],
+    [ "ttin4:IN2", "not28:IN", "yellow", [ "h0" ] ],
+    [ "ttin4:IN3", "and31:A", "red", [ "h0" ] ],
+    [ "and30:OUT", "or14:B", "green", [ "v9.6", "h48" ] ],
+    [ "and32:OUT", "or14:A", "green", [ "v9.6", "h-28.8" ] ],
+    [ "and33:OUT", "and34:A", "green", [ "v0" ] ],
+    [ "and34:B", "not42:OUT", "green", [ "v0" ] ],
+    [ "ttin4:IN1", "not42:IN", "green", [ "h0" ] ],
+    [ "ttin4:IN2", "and33:B", "yellow", [ "h0" ] ],
+    [ "ttin4:IN3", "and33:A", "red", [ "h0" ] ],
+    [ "not41:OUT", "and35:B", "green", [ "h0" ] ],
+    [ "not49:OUT", "and35:A", "green", [ "h0" ] ],
+    [ "and35:OUT", "and55:A", "green", [ "v0" ] ],
+    [ "ttin4:IN2", "not41:IN", "yellow", [ "h0" ] ],
+    [ "ttin4:IN3", "not49:IN", "red", [ "h0" ] ],
+    [ "and34:OUT", "or15:B", "green", [ "v9.6", "h19.2" ] ],
+    [ "and55:OUT", "or15:A", "green", [ "v9.6", "h-28.8" ] ],
+    [ "or2:OUT", "or16:B", "green", [ "v19.2", "h115.2" ] ],
+    [ "or14:OUT", "or16:A", "green", [ "v19.2", "h-124.8" ] ],
+    [ "or16:OUT", "or17:B", "green", [ "v19.2", "h48" ] ],
+    [ "or15:OUT", "or17:A", "green", [ "v144", "h-192" ] ],
+    [ "ttout1:EXTOUT3", "sevseg1:D", "yellow", [ "h28.8", "v67.2", "h178" ] ],
+    [ "not2:OUT", "and55:B", "green", [ "h0" ] ],
+    [ "ttin4:IN1", "not2:IN", "green", [ "h0" ] ],
+    [ "ttout1:EXTOUT4", "sevseg1:E", "green", [ "h38.4", "v48", "h158.8" ] ],
+    [ "ttin5:IN0", "and36:B", "magenta", [ "h76.8", "v297.6" ] ],
+    [ "ttin5:IN1", "and36:A", "green", [ "h96", "v288" ] ],
+    [ "ttin5:IN0", "and37:B", "magenta", [ "h0" ] ],
+    [ "ttin5:IN2", "and37:A", "yellow", [ "h0" ] ],
+    [ "ttin5:IN2", "and38:B", "yellow", [ "h0" ] ],
+    [ "ttin5:IN3", "not30:IN", "red", [ "h0" ] ],
+    [ "not30:OUT", "and38:A", "green", [ "h0" ] ],
+    [ "ttin5:IN0", "and39:B", "magenta", [ "h0" ] ],
+    [ "not50:OUT", "and39:A", "green", [ "h0" ] ],
+    [ "ttin5:IN3", "not50:IN", "red", [ "h0" ] ],
+    [ "and57:OUT", "and56:A", "green", [ "v0" ] ],
+    [ "not53:OUT", "and56:B", "green", [ "h0" ] ],
+    [ "not51:OUT", "and57:A", "green", [ "h0" ] ],
+    [ "not52:OUT", "and57:B", "green", [ "h0" ] ],
+    [ "ttin5:IN1", "not53:IN", "green", [ "h0" ] ],
+    [ "ttin5:IN2", "not52:IN", "yellow", [ "h0" ] ],
+    [ "ttin5:IN3", "not51:IN", "red", [ "h0" ] ],
+    [ "and36:OUT", "or18:B", "green", [ "v19.2", "h28.8" ] ],
+    [ "and37:OUT", "or18:A", "green", [ "v19.2", "h-19.2" ] ],
+    [ "and38:OUT", "or19:B", "green", [ "v19.2", "h19.2" ] ],
+    [ "and39:OUT", "or19:A", "green", [ "v19.2", "h-28.8" ] ],
+    [ "or18:OUT", "or31:B", "green", [ "v28.8", "h76.8" ] ],
+    [ "or19:OUT", "or31:A", "green", [ "v28.8", "h-86.4" ] ],
+    [ "or31:OUT", "or20:B", "green", [ "v19.2", "h201.6" ] ],
+    [ "and56:OUT", "or20:A", "green", [ "v297.6", "h-48" ] ],
+    [ "ttin4:EXTIN5", "sw1:6b", "yellow", [ "h-57.6", "v902.4", "h-796.8", "v-259.2" ] ],
+    [ "sevseg1:F", "ttout1:EXTOUT5", "blue", [ "v-28.09", "h-178", "v76.8" ] ],
+    [ "ttin6:IN2", "not31:IN", "yellow", [ "h0" ] ],
+    [ "ttin6:IN3", "not32:IN", "red", [ "h0" ] ],
+    [ "not31:OUT", "and40:B", "green", [ "h0", "v9.6" ] ],
+    [ "not32:OUT", "and40:A", "green", [ "h0" ] ],
+    [ "ttin6:IN0", "and41:B", "magenta", [ "h0" ] ],
+    [ "ttin6:IN0", "and42:B", "magenta", [ "h0" ] ],
+    [ "not57:OUT", "and59:A", "green", [ "h0" ] ],
+    [ "and59:OUT", "and58:A", "green", [ "v0" ] ],
+    [ "and40:OUT", "or21:B", "green", [ "v38.4", "h28.8" ] ],
+    [ "and41:OUT", "or21:A", "green", [ "v38.4", "h-38.4" ] ],
+    [ "and42:OUT", "or22:B", "green", [ "v38.4", "h38.4" ] ],
+    [ "and43:OUT", "or22:A", "green", [ "v38.4", "h-28.8" ] ],
+    [ "or21:OUT", "or32:B", "green", [ "v28.8", "h96" ] ],
+    [ "or22:OUT", "or32:A", "green", [ "v28.8", "h-86.4" ] ],
+    [ "and58:OUT", "or23:A", "green", [ "v316.8", "h-172.8" ] ],
+    [ "or32:OUT", "or23:B", "green", [ "v19.2", "h96" ] ],
+    [ "ttout1:EXTOUT6", "sevseg1:G", "violet", [ "h38.4", "v-76.8", "h158.8" ] ],
+    [ "ttin7:IN3", "not35:IN", "red", [ "h0" ] ],
+    [ "not35:OUT", "and45:A", "green", [ "h0" ] ],
+    [ "ttin7:IN2", "and45:B", "yellow", [ "h0" ] ],
+    [ "not36:OUT", "and46:A", "green", [ "h0" ] ],
+    [ "ttin7:IN1", "not36:IN", "green", [ "h0" ] ],
+    [ "ttin7:IN0", "and46:B", "magenta", [ "h0" ] ],
+    [ "ttin7:IN0", "and47:B", "magenta", [ "h0" ] ],
+    [ "and45:OUT", "or24:B", "green", [ "v28.8", "h28.8", "v19.2" ] ],
+    [ "and46:OUT", "or24:A", "green", [ "v28.8", "h-28.8" ] ],
+    [ "and47:OUT", "or25:B", "green", [ "v28.8", "h38.4" ] ],
+    [ "or24:OUT", "or27:B", "green", [ "v19.2", "h9.6" ] ],
+    [ "or25:OUT", "or27:A", "green", [ "v19.2", "h-86.4" ] ],
+    [ "or27:OUT", "or26:B", "green", [ "v19.2", "h144" ] ],
+    [ "ttin7:IN3", "and47:A", "red", [ "h0" ] ],
+    [ "not6:OUT", "and60:B", "green", [ "h0" ] ],
+    [ "not22:OUT", "and50:A", "green", [ "h0" ] ],
+    [ "and50:OUT", "and60:A", "green", [ "v0" ] ],
+    [ "not23:OUT", "and48:B", "green", [ "h0" ] ],
+    [ "and48:OUT", "or25:A", "green", [ "v28.8", "h-28.8" ] ],
+    [ "ttin7:IN1", "not23:IN", "green", [ "h0" ] ],
+    [ "ttin7:IN2", "and48:A", "yellow", [ "h0" ] ],
+    [ "ttin7:IN0", "not6:IN", "magenta", [ "h0" ] ],
+    [ "ttin7:IN1", "and50:B", "green", [ "h0" ] ],
+    [ "ttin7:IN2", "not22:IN", "yellow", [ "h0" ] ],
+    [ "and60:OUT", "or26:A", "green", [ "v288", "h-86.4" ] ],
+    [ "not29:OUT", "and22:B", "green", [ "h0" ] ],
+    [ "not37:OUT", "and23:A", "green", [ "v230.4" ] ],
+    [ "ttin3:IN0", "not29:IN", "magenta", [ "h0" ] ],
+    [ "ttin3:IN0", "and23:B", "magenta", [ "h0" ] ],
+    [ "ttin3:IN1", "and22:A", "green", [ "h0" ] ],
+    [ "ttin3:IN1", "not37:IN", "green", [ "h0" ] ],
+    [ "not38:OUT", "and24:B", "green", [ "h0" ] ],
+    [ "and22:OUT", "or11:B", "green", [ "v28.8", "h48" ] ],
+    [ "and23:OUT", "or11:A", "green", [ "v28.8", "h-38.4", "v19.2" ] ],
+    [ "not39:OUT", "and25:B", "green", [ "h0" ] ],
+    [ "not55:OUT", "and25:A", "green", [ "h0" ] ],
+    [ "not56:OUT", "and49:B", "green", [ "h0" ] ],
+    [ "and24:OUT", "or12:B", "green", [ "v28.8", "h57.6" ] ],
+    [ "and25:OUT", "or12:A", "green", [ "v28.8", "h-57.6" ] ],
+    [ "ttin3:IN2", "not38:IN", "yellow", [ "h0" ] ],
+    [ "ttin3:IN3", "and24:A", "red", [ "h336", "v374.4" ] ],
+    [ "ttin3:IN1", "not39:IN", "green", [ "h0" ] ],
+    [ "ttin3:IN2", "not55:IN", "yellow", [ "h0" ] ],
+    [ "ttin3:IN1", "not56:IN", "green", [ "h0" ] ],
+    [ "ttin3:IN3", "and49:A", "red", [ "h0" ] ],
+    [ "or11:OUT", "or33:B", "green", [ "v19.2", "h96" ] ],
+    [ "or12:OUT", "or33:A", "green", [ "v19.2", "h-105.6" ] ],
+    [ "or33:OUT", "or13:B", "green", [ "v19.2", "h153.6" ] ],
+    [ "and49:OUT", "or13:A", "green", [ "v297.6", "h-115.2" ] ],
+    [ "ttout1:EXTOUT2", "sevseg1:C", "orange", [ "h19.2", "v86.4", "h206.8" ] ],
+    [ "ttout1:EXTOUT1", "sevseg1:B", "red", [ "h19.2", "v-48", "h220.8" ] ],
+    [ "not11:OUT", "and9:B", "green", [ "h0" ] ],
+    [ "not12:OUT", "and9:A", "green", [ "h0" ] ],
+    [ "ttin2:IN0", "not11:IN", "magenta", [ "h0" ] ],
+    [ "ttin2:IN1", "not12:IN", "green", [ "h0" ] ],
+    [ "not13:OUT", "and10:B", "green", [ "h0" ] ],
+    [ "not14:OUT", "and10:A", "green", [ "h0" ] ],
+    [ "and9:OUT", "or6:B", "green", [ "v19.2", "h48" ] ],
+    [ "and10:OUT", "or6:A", "green", [ "v19.2", "h-48" ] ],
+    [ "ttin2:IN1", "not13:IN", "green", [ "h0" ] ],
+    [ "ttin2:IN2", "not14:IN", "yellow", [ "h0" ] ],
+    [ "not15:OUT", "and12:A", "green", [ "h0" ] ],
+    [ "and12:OUT", "and11:A", "green", [ "v0" ] ],
+    [ "not16:OUT", "and12:B", "green", [ "h0" ] ],
+    [ "ttin2:IN3", "not15:IN", "red", [ "h0" ] ],
+    [ "ttin2:IN1", "not16:IN", "green", [ "h0" ] ],
+    [ "ttin2:IN0", "and11:B", "magenta", [ "h0" ] ],
+    [ "and14:OUT", "and13:A", "green", [ "v0" ] ],
+    [ "not18:OUT", "and14:B", "green", [ "h0" ] ],
+    [ "not19:OUT", "and16:A", "green", [ "h0" ] ],
+    [ "and16:OUT", "and15:A", "green", [ "v0" ] ],
+    [ "not20:OUT", "and16:B", "green", [ "h0" ] ],
+    [ "and18:OUT", "and17:A", "green", [ "v0" ] ],
+    [ "not59:OUT", "and17:B", "green", [ "h0" ] ],
+    [ "not17:OUT", "and15:B", "green", [ "h0" ] ],
+    [ "and11:OUT", "or7:B", "green", [ "v19.2", "h48" ] ],
+    [ "and13:OUT", "or7:A", "green", [ "v19.2", "h-48" ] ],
+    [ "and15:OUT", "or8:B", "green", [ "v19.2", "h48" ] ],
+    [ "and17:OUT", "or8:A", "green", [ "v19.2", "h-57.6" ] ],
+    [ "ttin2:IN0", "and13:B", "magenta", [ "h0" ] ],
+    [ "ttin2:IN2", "not18:IN", "yellow", [ "h0" ] ],
+    [ "ttin2:IN3", "and14:A", "red", [ "h0" ] ],
+    [ "ttin2:IN0", "not17:IN", "magenta", [ "h0" ] ],
+    [ "ttin2:IN2", "not20:IN", "yellow", [ "h0" ] ],
+    [ "ttin2:IN3", "not19:IN", "red", [ "h0" ] ],
+    [ "ttin2:IN0", "not59:IN", "magenta", [ "h0" ] ],
+    [ "ttin2:IN2", "and18:B", "yellow", [ "h0" ] ],
+    [ "ttin2:IN3", "and18:A", "red", [ "h0" ] ],
+    [ "or6:OUT", "or9:B", "green", [ "v19.2", "h105.6", "v19.2" ] ],
+    [ "or7:OUT", "or9:A", "green", [ "v19.2", "h-105.6" ] ],
+    [ "or9:OUT", "or10:B", "green", [ "v57.6", "h192" ] ],
+    [ "or8:OUT", "or10:A", "green", [ "v192", "h-153.6" ] ],
+    [ "not46:OUT", "and52:B", "green", [ "h0", "v153.6", "h19.2" ] ],
+    [ "ttin6:IN1", "and43:B", "green", [ "h0" ] ],
+    [ "not9:OUT", "and58:B", "green", [ "h0" ] ],
+    [ "ttin6:IN2", "not57:IN", "yellow", [ "h0" ] ],
+    [ "ttin6:IN0", "not9:IN", "magenta", [ "h0" ] ],
+    [ "ttin6:IN2", "and42:A", "yellow", [ "h0" ] ],
+    [ "ttin6:IN1", "and59:B", "green", [ "h0" ] ],
+    [ "not7:OUT", "and41:A", "green", [ "h0" ] ],
+    [ "ttin6:IN1", "not7:IN", "green", [ "h0" ] ],
+    [ "not8:OUT", "and43:A", "green", [ "h0" ] ],
+    [ "ttin6:IN3", "not8:IN", "red", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
