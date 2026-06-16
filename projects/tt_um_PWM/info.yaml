@@ -1,0 +1,50 @@
+# Tiny Tapeout project information
+project:
+  title:        "PWM Generator"
+  author:       "Omar, Nitin"
+  github:       "Omar90551/TTSky-PWM" 
+  description:  "A PWM generator with configurable period and duty cycle via 8-bit input pins"
+  language:     "Verilog"
+  clock_hz:     10000000
+
+  tiles: "1x1"
+
+  top_module:  "tt_um_PWM"
+
+  source_files:
+    - "tt_um_PWM.v"
+    - "pwm_counter.v"
+    - "pwm_comparator.v"
+
+pinout:
+  # Inputs
+  ui[0]: "period_cfg bit 0"
+  ui[1]: "period_cfg bit 1"
+  ui[2]: "period_cfg bit 2"
+  ui[3]: "period_cfg bit 3"
+  ui[4]: "period_cfg bit 4"
+  ui[5]: "period_cfg bit 5"
+  ui[6]: "period_cfg bit 6"
+  ui[7]: "period_cfg bit 7"
+
+  # Outputs
+  uo[0]: "pwm_out"
+  uo[1]: "Unused (Grounded)"
+  uo[2]: "Unused (Grounded)"
+  uo[3]: "Unused (Grounded)"
+  uo[4]: "Unused (Grounded)"
+  uo[5]: "Unused (Grounded)"
+  uo[6]: "Unused (Grounded)"
+  uo[7]: "Unused (Grounded)"
+
+  # Bidirectional pins (used as inputs)
+  uio[0]: "duty_cfg bit 0"
+  uio[1]: "duty_cfg bit 1"
+  uio[2]: "duty_cfg bit 2"
+  uio[3]: "duty_cfg bit 3"
+  uio[4]: "duty_cfg bit 4"
+  uio[5]: "duty_cfg bit 5"
+  uio[6]: "duty_cfg bit 6"
+  uio[7]: "duty_cfg bit 7"
+
+yaml_version: 6

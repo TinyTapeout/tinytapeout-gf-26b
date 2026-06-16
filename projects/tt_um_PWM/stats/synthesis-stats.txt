@@ -1,0 +1,43 @@
+104. Printing statistics.
+
+=== tt_um_PWM ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      101        - wires
+      136        - wire bits
+       17        - public wires
+       52        - public wire bits
+        8        - ports
+       43        - port bits
+      117  2.3E+03 cells
+        3   52.685   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        3   65.856   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+        6   105.37   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        1   30.733   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+        8  158.054   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        1   13.171   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       20  175.616   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+        9  671.731   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        1   32.928   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+        7   76.832   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        1   19.757   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+        8   105.37   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+        4   70.246   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        1   21.952   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+        3   52.685   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        2   52.685   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        2   65.856   gf180mcu_fd_sc_mcu7t5v0__oai222_1
+        4   87.808   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        2   35.123   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__or4_1
+       23  201.958   gf180mcu_fd_sc_mcu7t5v0__tiel
+        1   28.538   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        3   79.027   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+
+   Chip area for module '\tt_um_PWM': 2298.374400
+     of which used for sequential elements: 671.731200 (29.23%)
+
