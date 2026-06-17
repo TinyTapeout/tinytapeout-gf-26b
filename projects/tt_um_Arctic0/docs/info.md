@@ -1,6 +1,6 @@
 ## How it works
 
-Arctic0 CPU (SPI) is a 16-bit multi-cycle CPU wrapped for Tiny Tapeout.
+Arctic0 16-bit CPU is a multi-cycle CPU wrapped for Tiny Tapeout.
 The CPU sees one 16-bit address space. `MEM_CTRL` decodes each access and stalls
 the CPU clock while external SPI or UART work completes.
 
