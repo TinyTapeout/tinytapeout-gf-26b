@@ -1,0 +1,48 @@
+# Tiny Tapeout project information
+project:
+  title: "UART_SOC"
+  author: "Siri Jagadeesh"
+  discord: ""
+  description: "Verifies firmware signature using a secure hash comparison module"
+  language: "Verilog"
+  clock_hz: 0
+
+  tiles: "1x1"
+
+  top_module: "tt_um_uart_soc"
+
+  source_files:
+    - "project.v"
+
+pinout:
+  # Inputs
+  ui[0]: "data_in_0"
+  ui[1]: "data_in_1"
+  ui[2]: "data_in_2"
+  ui[3]: "data_in_3"
+  ui[4]: "signature_bit_0"
+  ui[5]: "signature_bit_1"
+  ui[6]: "signature_bit_2"
+  ui[7]: "signature_bit_3"
+
+  # Outputs
+  uo[0]: "verified"
+  uo[1]: "status_led"
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
