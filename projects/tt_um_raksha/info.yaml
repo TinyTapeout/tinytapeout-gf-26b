@@ -1,0 +1,43 @@
+yaml_version: 6
+
+project:
+  title: "Raksha"
+  author: "Sinchana"
+  description: "Secure Packet Authentication Engine for V2X Communication"
+  language: "Verilog"
+  clock_hz: 1000000
+
+  tiles: "1x1"
+
+  top_module: "tt_um_raksha"
+
+  source_files:
+    - "tt_um_raksha.v"
+
+pinout:
+  ui[0]: "Packet Bit 0"
+  ui[1]: "Packet Bit 1"
+  ui[2]: "Packet Bit 2"
+  ui[3]: "Packet Bit 3"
+  ui[4]: "Packet Bit 4"
+  ui[5]: "Packet Bit 5"
+  ui[6]: "Packet Bit 6"
+  ui[7]: "Packet Bit 7"
+
+  uo[0]: "Authentication OK"
+  uo[1]: "Alert"
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
