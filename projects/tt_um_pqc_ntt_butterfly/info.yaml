@@ -1,0 +1,40 @@
+yaml_version: 6
+
+project:
+  title:        "PQC NTT Butterfly Core"
+  author:       "Aishwarya Gadela & Bojji Reddy Rishika"
+  description:  "Hardware-accelerated Cooley-Tukey NTT Butterfly processing block for PQC Kyber"
+  language:     "Verilog"
+  clock_hz:     10000000
+  tiles:        "1x1"
+  top_module:   "tt_um_pqc_ntt_butterfly"
+  source_files:
+    - "project.v"
+
+pinout:
+  ui[0]: "A_in[0]"
+  ui[1]: "A_in[1]"
+  ui[2]: "A_in[2]"
+  ui[3]: "A_in[3]"
+  ui[4]: "A_in[4]"
+  ui[5]: "A_in[5]"
+  ui[6]: "A_in[6]"
+  ui[7]: "A_in[7]"
+
+  uo[0]: "X_out[0]"
+  uo[1]: "X_out[1]"
+  uo[2]: "X_out[2]"
+  uo[3]: "X_out[3]"
+  uo[4]: "X_out[4]"
+  uo[5]: "X_out[5]"
+  uo[6]: "X_out[6]"
+  uo[7]: "X_out[7]"
+
+  uio[0]: "B_in[0]"
+  uio[1]: "B_in[1]"
+  uio[2]: "B_in[2]"
+  uio[3]: "B_in[3]"
+  uio[4]: "Y_out[4]"
+  uio[5]: "Y_out[5]"
+  uio[6]: "Y_out[6]"
+  uio[7]: "Y_out[7]"
