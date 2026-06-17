@@ -1,0 +1,41 @@
+# Tiny Tapeout project information
+project:
+  title:        "Fast Authentication Accelerator"
+  author:       "Nagaraj"
+  discord:      ""
+  description:  "A hardware IP block that performs low-latency ECDSA verification for V2X communication. Authenticates digital signatures in under 1 ms, meeting IEEE 1609.2 automotive security requirements."
+  language:     "Verilog"
+  clock_hz:     50000000
+  tiles:        "1x1"
+  top_module:   "tt_um_fast_auth"
+  source_files:
+    - "project.v"
+
+pinout:
+  ui[0]: "start - Pulse HIGH to begin"
+  ui[1]: "soft_rst - Soft reset active HIGH"
+  ui[2]: "mode0 - Mode select bit 0"
+  ui[3]: "mode1 - Mode select bit 1"
+  ui[4]: "data_in bit 4"
+  ui[5]: "data_in bit 5"
+  ui[6]: "data_in bit 6"
+  ui[7]: "data_in bit 7"
+  uo[0]: "auth_valid - HIGH when signature verified"
+  uo[1]: "auth_reject - HIGH when signature rejected"
+  uo[2]: "busy - HIGH while processing"
+  uo[3]: "ecc_done - Pulses when ECC step done"
+  uo[4]: "key_loaded - HIGH when key loaded"
+  uo[5]: "packet_ready - HIGH when packet received"
+  uo[6]: ""
+  uo[7]: ""
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
