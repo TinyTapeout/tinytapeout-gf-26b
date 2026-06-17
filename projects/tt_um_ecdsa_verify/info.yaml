@@ -1,0 +1,52 @@
+yaml_version: 6
+
+project:
+  title: "ECDSA Verification"
+  author: "Lyra"
+  discord: ""
+  description: "Simplified ECDSA digital signature verification module using Verilog"
+  language: "Verilog"
+  clock_hz: 10000000
+  tiles: "1x1"
+  top_module: "tt_um_ecdsa_verify"
+
+  source_files:
+    - project.v
+
+pinout:
+  ui[0]: "Input bit 0"
+  ui[1]: "Input bit 1"
+  ui[2]: "Input bit 2"
+  ui[3]: "Input bit 3"
+  ui[4]: "Input bit 4"
+  ui[5]: "Input bit 5"
+  ui[6]: "Input bit 6"
+  ui[7]: "Input bit 7"
+
+  uo[0]: "Output bit 0"
+  uo[1]: "Output bit 1"
+  uo[2]: "Output bit 2"
+  uo[3]: "Output bit 3"
+  uo[4]: "Output bit 4"
+  uo[5]: "Output bit 5"
+  uo[6]: "Output bit 6"
+  uo[7]: "Output bit 7"
+
+  uio[0]: "Bidirectional IO 0"
+  uio[1]: "Bidirectional IO 1"
+  uio[2]: "Bidirectional IO 2"
+  uio[3]: "Bidirectional IO 3"
+  uio[4]: "Bidirectional IO 4"
+  uio[5]: "Bidirectional IO 5"
+  uio[6]: "Bidirectional IO 6"
+  uio[7]: "Bidirectional IO 7"
+
+  ua[0]: "Unused"
+  ua[1]: "Unused"
+  ua[2]: "Unused"
+  ua[3]: "Unused"
+  ua[4]: "Unused"
+  ua[5]: "Unused"
+
+tests:
+  - test/test.py
