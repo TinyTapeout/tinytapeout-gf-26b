@@ -1,0 +1,21 @@
+95. Printing statistics.
+
+=== tt_um_likitha_trng ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+        8        - wires
+       43        - wire bits
+        8        - public wires
+       43        - public wire bits
+        8        - ports
+       43        - port bits
+       24  469.773 cells
+        2   26.342   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       16  140.493   gf180mcu_fd_sc_mcu7t5v0__tiel
+        6  302.938   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_likitha_trng': 469.772800
+     of which used for sequential elements: 0.000000 (0.00%)
+
