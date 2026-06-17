@@ -1,0 +1,44 @@
+project:
+  title: "Secure V2X Mini Demonstrator"
+  author: "Pushkar Kulkarni"
+  discord: ""
+  description: "8-bit LFSR based data masking for secure V2X communication"
+  language: "Verilog"
+  clock_hz: 50000000
+
+  tiles: "1x1"
+
+  top_module: "tt_um_push"
+
+  source_files:
+    - "project.v"
+
+pinout:
+  ui[0]: "Plaintext bit 0"
+  ui[1]: "Plaintext bit 1"
+  ui[2]: "Plaintext bit 2"
+  ui[3]: "Plaintext bit 3"
+  ui[4]: "Plaintext bit 4"
+  ui[5]: "Plaintext bit 5"
+  ui[6]: "Plaintext bit 6"
+  ui[7]: "Plaintext bit 7"
+
+  uo[0]: "Masked bit 0"
+  uo[1]: "Masked bit 1"
+  uo[2]: "Masked bit 2"
+  uo[3]: "Masked bit 3"
+  uo[4]: "Masked bit 4"
+  uo[5]: "Masked bit 5"
+  uo[6]: "Masked bit 6"
+  uo[7]: "Masked bit 7"
+
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
