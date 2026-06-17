@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Hardware Anomaly Detection"      # Project title
+  author:       "Vinayak"                       # Your name (Update this!)
+  discord:      ""                                # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "ML-based V2X hardware anomaly detection engine." # One line description of what your project does
+  language:     "Verilog"                         # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000                          # Clock frequency in Hz (50 MHz)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_hardware_anomaly_detection"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_hardware_anomaly_detection.v"       # Ensure this matches your actual filename in the src/ folder!
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "serial_bit_in"
+  ui[1]: "bit_valid_strobe"
+  ui[2]: "mode_sel (reserved)"
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "threat_score[0]"
+  uo[1]: "threat_score[1]"
+  uo[2]: "threat_score[2]"
+  uo[3]: "threat_score[3]"
+  uo[4]: "threat_score[4]"
+  uo[5]: "threat_score[5]"
+  uo[6]: "threat_score[6]"
+  uo[7]: "threat_score[7]"
+
+  # Bidirectional pins
+  uio[0]: "done_flag (out)"
+  uio[1]: "irq_flag (out)"
+  uio[2]: "uart_tx (out)"
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
