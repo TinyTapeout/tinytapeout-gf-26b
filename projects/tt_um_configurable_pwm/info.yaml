@@ -1,0 +1,48 @@
+# Tiny Tapeout project information
+project:
+  title:        "Configurable PWM Generator"
+  author:       "Shivaranjani GR, Ganesh Ragava, Sidharth Kamalakkannan"
+  discord:      "grshivaranjani_40955"      
+  description:  "A PWM generator featuring run-time variable period, duty cycle, and output polarity controls with built-in safety clamps."
+  language:     "Verilog"
+  clock_hz:     50000000       
+
+  tiles: "1x1"          
+  top_module:  "tt_um_configurable_pwm"
+
+  source_files:
+    - "project.v"
+
+# Functional Pinout Mapping
+pinout:
+  # Inputs
+  ui[0]: "enable"
+  ui[1]: "period_in[0]"
+  ui[2]: "period_in[1]"
+  ui[3]: "period_in[2]"
+  ui[4]: "period_in[3]"
+  ui[5]: "invert"
+  ui[6]: "unused_in_6"
+  ui[7]: "unused_in_7"
+
+  # Outputs
+  uo[0]: "pwm_out"
+  uo[1]: "comp_pwm_out"
+  uo[2]: "unused_out_2"
+  uo[3]: "unused_out_3"
+  uo[4]: "unused_out_4"
+  uo[5]: "unused_out_5"
+  uo[6]: "unused_out_6"
+  uo[7]: "unused_out_7"
+
+  # Bidirectional pins
+  uio[0]: "duty_in[0]"
+  uio[1]: "duty_in[1]"
+  uio[2]: "duty_in[2]"
+  uio[3]: "duty_in[3]"
+  uio[4]: "unused_io_4"
+  uio[5]: "unused_io_5"
+  uio[6]: "unused_io_6"
+  uio[7]: "unused_io_7"
+
+yaml_version: 6
