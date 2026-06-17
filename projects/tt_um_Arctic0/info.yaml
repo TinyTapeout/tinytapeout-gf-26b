@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "Arctic0 CPU (SPI)"      # Project title
+  title:        "Arctic0 16-bit CPU"      # Project title
   author:       "Einosuke Okazaki"      # Your name
   discord:      "0x2d1"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "16-bit multi-cycle CPU: SPI flash instructions, SPI SRAM data, UART TX/RX, GPIO and register dump"      # One line description of what your project does
