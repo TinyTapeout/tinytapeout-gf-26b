@@ -1,0 +1,58 @@
+# Tiny Tapeout project information
+project:
+  title:        "SPI Slave with 8-Register File"      # Project title
+  author:       "Usha"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "An industry-grade SPI slave peripheral with an internal 8-byte register file"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     10000000       # Clock frequency in MHz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_spi_slave"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_spi_slave.v"
+    - "spi_slave.v"
+    - "reg_file.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "unused"
+  ui[1]: "unused"
+  ui[2]: "unused"
+  ui[3]: "unused"
+  ui[4]: "unused"
+  ui[5]: "unused"
+  ui[6]: "unused"
+  ui[7]: "unused"
+
+  # Outputs
+  uo[0]: "reg0_out[0]"
+  uo[1]: "reg0_out[1]"
+  uo[2]: "reg0_out[2]"
+  uo[3]: "reg0_out[3]"
+  uo[4]: "reg0_out[4]"
+  uo[5]: "reg0_out[5]"
+  uo[6]: "reg0_out[6]"
+  uo[7]: "reg0_out[7]"
+
+  # Bidirectional pins
+  uio[0]: "SCLK (Input)"
+  uio[1]: "MOSI (Input)"
+  uio[2]: "CS_N (Input)"
+  uio[3]: "MISO (Output)"
+  uio[4]: "unused"
+  uio[5]: "unused"
+  uio[6]: "unused"
+  uio[7]: "unused"
+
+# Do not change!
+yaml_version: 6
