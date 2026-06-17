@@ -1,0 +1,52 @@
+# Tiny Tapeout project information
+
+project:
+  title: "SPI Master Slave Communication"
+  author: "Nevin Philip"
+  discord: ""
+  description: "8-bit Full Duplex SPI Communication using Master and Slave"
+  language: "Verilog"
+  clock_hz: 0
+
+  tiles: "1x1"
+
+  top_module: "tt_um_spi_master"
+
+  source_files:
+    - "project.v"
+    - "spi_master.v"
+    - "spi_slave.v"
+
+pinout:
+
+  # Inputs
+  ui[0]: "START"
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "MOSI"
+  uo[1]: "MISO"
+  uo[2]: "SCLK"
+  uo[3]: "CS"
+  uo[4]: "DONE"
+  uo[5]: "MASTER_RX0"
+  uo[6]: "SLAVE_RX0"
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
