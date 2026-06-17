@@ -1,0 +1,33 @@
+102. Printing statistics.
+
+=== tt_um_cambridge_nlfsr ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       37        - wires
+       72        - wire bits
+        8        - public wires
+       43        - public wire bits
+        8        - ports
+       43        - port bits
+       53 1.67E+03 cells
+        7  122.931   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__and4_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        2   17.562   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       16 1.02E+03   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+        1   10.976   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        2   26.342   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+        1   17.562   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        3   65.856   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+        1   17.562   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        7  122.931   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        8   70.246   gf180mcu_fd_sc_mcu7t5v0__tieh
+        1   52.685   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        1    50.49   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_cambridge_nlfsr': 1668.352000
+     of which used for sequential elements: 1018.572800 (61.05%)
+

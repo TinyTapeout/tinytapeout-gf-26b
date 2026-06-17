@@ -1,0 +1,53 @@
+# Tiny Tapeout project information
+project:
+  title:        "Programmable Chaotic NLFSR"
+  author:       "Aishu"
+  discord:      ""      # Fill this in if you want the Tapeout role
+  description:  "A 16-bit NLFSR with two switchable non-linear feedback functions for cryptographic chaos."
+  language:     "Verilog"
+  clock_hz:     10000000 # 10 MHz is a safe default for this logic
+
+  # How many tiles your design occupies?
+  tiles: "1x1"
+
+  # Your top module name must match your Verilog module name
+  top_module:  "tt_um_cambridge_nlfsr"
+
+  # List your project's source files here.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. 
+pinout:
+  # Inputs
+  ui[0]: "mode_select" # 0: Function A, 1: Function B
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs (MSB of the 16-bit register)
+  uo[0]: "nlfsr_8"
+  uo[1]: "nlfsr_9"
+  uo[2]: "nlfsr_10"
+  uo[3]: "nlfsr_11"
+  uo[4]: "nlfsr_12"
+  uo[5]: "nlfsr_13"
+  uo[6]: "nlfsr_14"
+  uo[7]: "nlfsr_15"
+
+  # Bidirectional pins (LSB of the 16-bit register)
+  uio[0]: "nlfsr_0"
+  uio[1]: "nlfsr_1"
+  uio[2]: "nlfsr_2"
+  uio[3]: "nlfsr_3"
+  uio[4]: "nlfsr_4"
+  uio[5]: "nlfsr_5"
+  uio[6]: "nlfsr_6"
+  uio[7]: "nlfsr_7"
+
+# Do not change!
+yaml_version: 6
