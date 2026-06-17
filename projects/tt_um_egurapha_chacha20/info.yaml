@@ -1,0 +1,64 @@
+# Tiny Tapeout project information
+project:
+  title:        "ChaCha20"      # Project title
+  author:       "Raphael Eguchi"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "RFC 8439 ChaCha20 stream-cipher core with a UART or parallel host interface"      # One line description of what your project does
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     35000000       # 35 MHz board clock. UART baud = clock / BAUD_DIV = 35e6 / 200 = 175000.
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "3x4"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_egurapha_chacha20"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_egurapha_chacha20.sv"
+    - "chacha20_controller.sv"
+    - "chacha20_core.sv"
+    - "quarter_round.sv"
+    - "adder32.sv"
+    - "uart_rx.sv"
+    - "uart_tx.sv"
+    - "parallel_io.sv"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs  (MODE=uio[3]: 0=UART, 1=parallel. In parallel mode ui[7:0]=data-in;
+  #          UART RX shares ui[3].)
+  ui[0]: "PDIN0"
+  ui[1]: "PDIN1"
+  ui[2]: "PDIN2"
+  ui[3]: "RX / PDIN3"
+  ui[4]: "PDIN4"
+  ui[5]: "PDIN5"
+  ui[6]: "PDIN6"
+  ui[7]: "PDIN7"
+
+  # Outputs  (parallel mode: uo[7:0]=data-out; UART mode: BUSY/ERR/TX as named)
+  uo[0]: "BUSY / PDOUT0"
+  uo[1]: "ERR / PDOUT1"
+  uo[2]: "PDOUT2"
+  uo[3]: "PDOUT3"
+  uo[4]: "TX / PDOUT4"
+  uo[5]: "PDOUT5"
+  uo[6]: "PDOUT6"
+  uo[7]: "PDOUT7"
+
+  # Bidirectional pins  (parallel-interface control; unused in UART mode)
+  uio[0]: "PAR_WR (in)"
+  uio[1]: "PAR_VALID (out)"
+  uio[2]: "PAR_BUSY (out)"
+  uio[3]: "MODE (in: 1=parallel)"
+  uio[4]: "HOLD_SEL0 (in)"
+  uio[5]: "HOLD_SEL1 (in)"
+  uio[6]: "PAR_ERR (out)"
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
