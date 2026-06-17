@@ -1,0 +1,52 @@
+273. Printing statistics.
+
+=== tt_um_Arctic0 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     2555        - wires
+     2590        - wire bits
+      459        - public wires
+      494        - public wire bits
+        8        - ports
+       43        - port bits
+     2571 7.12E+04 cells
+       53  930.765   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       18  395.136   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        6  144.883   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       35   768.32   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      195 3.42E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       27  651.974   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       32   983.45   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+      136 2.69E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        3   39.514   gf180mcu_fd_sc_mcu7t5v0__buf_1
+      159  1.4E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+        1   65.856   gf180mcu_fd_sc_mcu7t5v0__dffnq_1
+      427 3.19E+04   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+       28 2.21E+03   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+      157 5.17E+03   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+      447 4.91E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       74 1.14E+03   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       27  533.434   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      222 2.92E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       53  930.765   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       21  460.992   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       47 1.03E+03   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      167 2.93E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       18  474.163   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+       16  351.232   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       15  362.208   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        7  184.397   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       46  807.834   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       16  351.232   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        9  237.082   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        6   52.685   gf180mcu_fd_sc_mcu7t5v0__tieh
+        6   52.685   gf180mcu_fd_sc_mcu7t5v0__tiel
+       20  570.752   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       73 1.92E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        4  201.958   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_Arctic0': 71166.188800
+     of which used for sequential elements: 34148.531200 (47.98%)
+

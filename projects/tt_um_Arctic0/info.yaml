@@ -1,0 +1,71 @@
+# Tiny Tapeout project information
+project:
+  title:        "Arctic0 CPU (SPI)"      # Project title
+  author:       "Einosuke Okazaki"      # Your name
+  discord:      "0x2d1"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "16-bit multi-cycle CPU: SPI flash instructions, SPI SRAM data, UART TX/RX, GPIO and register dump"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     40000000  # 40 MHz (SCLK=clk/2=20MHz=23LC512上限。UART BAUD_DIV=347 で約115273 baud)
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_Arctic0"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "ALU.v"
+    - "ADDR_PART.v"
+    - "A_REGISTER.v"
+    - "B_REGISTER.v"
+    - "DATAOE_WR_PART.v"
+    - "IR_PART.v"
+    - "PC_PART.v"
+    - "PHASE_PART.v"
+    - "RD_PART.v"
+    - "SP_PART.v"
+    - "SPI_MASTER.v"
+    - "MEM_CTRL.v"
+    - "UART_TX.v"
+    - "UART_RX.v"
+    - "cpu.v"
+    - "tt_um_Arctic0.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs (汎用GPIO入力, 0x7F21 で読み出し)
+  ui[0]: "GPIO_IN0"
+  ui[1]: "GPIO_IN1"
+  ui[2]: "GPIO_IN2"
+  ui[3]: "GPIO_IN3"
+  ui[4]: "GPIO_IN4"
+  ui[5]: "GPIO_IN5"
+  ui[6]: "GPIO_IN6"
+  ui[7]: "GPIO_IN7"
+
+  # Outputs (汎用GPIO出力, 0x7F30 で書き込みラッチ)
+  uo[0]: "GPIO_OUT0"
+  uo[1]: "GPIO_OUT1"
+  uo[2]: "GPIO_OUT2"
+  uo[3]: "GPIO_OUT3"
+  uo[4]: "GPIO_OUT4"
+  uo[5]: "GPIO_OUT5"
+  uo[6]: "GPIO_OUT6"
+  uo[7]: "GPIO_OUT7"
+
+  # Bidirectional pins
+  uio[0]: "FLASH_CS_N"
+  uio[1]: "SPI_SCLK"
+  uio[2]: "SPI_MOSI"
+  uio[3]: "SPI_MISO"
+  uio[4]: "SRAM_CS_N"
+  uio[5]: "UART_TX"
+  uio[6]: "UART_RX"
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
