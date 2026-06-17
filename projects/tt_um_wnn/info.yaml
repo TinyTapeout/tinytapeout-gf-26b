@@ -1,0 +1,49 @@
+# Tiny Tapeout project information
+project:
+  title:        "8-bit WNN Pattern Recognizer"
+  author:       "Your Name"
+  discord:      ""
+  description:  "8-bit Weightless Neural Network for pattern recognition using pattern matching."
+  language:     "Verilog"
+  clock_hz:     0
+
+  tiles: "1x1"
+
+  top_module:  "tt_um_wnn"
+
+  source_files:
+    - "project.v"
+
+pinout:
+  # Inputs
+  ui[0]: "Input bit 0"
+  ui[1]: "Input bit 1"
+  ui[2]: "Input bit 2"
+  ui[3]: "Input bit 3"
+  ui[4]: "Input bit 4"
+  ui[5]: "Input bit 5"
+  ui[6]: "Input bit 6"
+  ui[7]: "Input bit 7"
+
+  # Outputs
+  uo[0]: "Pattern match result"
+  uo[1]: "Bit 1 compare"
+  uo[2]: "Bit 2 compare"
+  uo[3]: "Bit 3 compare"
+  uo[4]: "Bit 4 compare"
+  uo[5]: "Bit 5 compare"
+  uo[6]: "Bit 6 compare"
+  uo[7]: "Bit 7 compare"
+
+  # Bidirectional pins
+  uio[0]: "unused"
+  uio[1]: "unused"
+  uio[2]: "unused"
+  uio[3]: "unused"
+  uio[4]: "unused"
+  uio[5]: "unused"
+  uio[6]: "unused"
+  uio[7]: "unused"
+
+# Do not change!
+yaml_version: 6
