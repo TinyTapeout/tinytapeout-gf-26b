@@ -1,0 +1,30 @@
+109. Printing statistics.
+
+=== tt_um_karthik_trng ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       28        - wires
+       63        - wire bits
+       15        - public wires
+       50        - public wire bits
+        8        - ports
+       43        - port bits
+       44  871.494 cells
+        2   35.123   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        2   26.342   gf180mcu_fd_sc_mcu7t5v0__buf_1
+        3   26.342   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+        6  381.965   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+        1   74.637   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        1   10.976   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        1   15.366   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+        3   39.514   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+        1   17.562   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       22  193.178   gf180mcu_fd_sc_mcu7t5v0__tiel
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+
+   Chip area for module '\tt_um_karthik_trng': 871.494400
+     of which used for sequential elements: 456.601600 (52.39%)
+
