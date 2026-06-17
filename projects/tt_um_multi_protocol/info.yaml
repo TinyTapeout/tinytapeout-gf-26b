@@ -1,0 +1,47 @@
+project:
+  title: "Multi-Protocol Communication Controller"
+  author: "Chirantan J Tilavalli"
+  discord: ""
+  description: "Supports UART, SPI and I2C transmission modes using a compact single-module design."
+  language: "Verilog"
+  clock_hz: 1000000
+
+  tiles: "1x1"
+
+  top_module: "tt_um_multi_protocol"
+
+  source_files:
+    - "multi_protocol.v"
+
+pinout:
+  # Inputs
+  ui[0]: "DATA0"
+  ui[1]: "DATA1"
+  ui[2]: "DATA2"
+  ui[3]: "DATA3"
+  ui[4]: "START"
+  ui[5]: "MODE0"
+  ui[6]: "MODE1"
+  ui[7]: "RESET"
+
+  # Outputs
+  uo[0]: "UART_TX"
+  uo[1]: "SPI_MOSI"
+  uo[2]: "SPI_SCLK"
+  uo[3]: "SPI_CS"
+  uo[4]: "I2C_SDA"
+  uo[5]: "I2C_SCL"
+  uo[6]: "BUSY"
+  uo[7]: "DONE"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
