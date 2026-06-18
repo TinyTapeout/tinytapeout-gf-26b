@@ -1,0 +1,24 @@
+95. Printing statistics.
+
+=== tt_um_sandy_venky ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       18        - wires
+       53        - wire bits
+       17        - public wires
+       52        - public wire bits
+        8        - ports
+       43        - port bits
+       34  893.446 cells
+        1   13.171   gf180mcu_fd_sc_mcu7t5v0__buf_1
+        7  522.458   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        1   79.027   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+       23  201.958   gf180mcu_fd_sc_mcu7t5v0__tiel
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        1    50.49   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_sandy_venky': 893.446400
+     of which used for sequential elements: 601.484800 (67.32%)
+
