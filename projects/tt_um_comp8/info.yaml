@@ -1,0 +1,45 @@
+project:
+  title: "8-bit Comparator"
+  author: "Nagaraj"
+  discord: ""
+  description: "Compares two 8-bit inputs and indicates equal, greater than, or less than."
+  language: "Verilog"
+  clock_hz: 0
+
+  tiles: "1x1"
+
+  top_module: "tt_um_comp8"
+
+  source_files:
+    - "tt_um_comp8.v"
+
+pinout:
+  ui[0]: "Input A bit 0"
+  ui[1]: "Input A bit 1"
+  ui[2]: "Input A bit 2"
+  ui[3]: "Input A bit 3"
+  ui[4]: "Input A bit 4"
+  ui[5]: "Input A bit 5"
+  ui[6]: "Input A bit 6"
+  ui[7]: "Input A bit 7"
+
+  uo[0]: "Equal output"
+  uo[1]: "Greater output"
+  uo[2]: "Less output"
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  uio[0]: "Input B bit 0"
+  uio[1]: "Input B bit 1"
+  uio[2]: "Input B bit 2"
+  uio[3]: "Input B bit 3"
+  uio[4]: "Input B bit 4"
+  uio[5]: "Input B bit 5"
+  uio[6]: "Input B bit 6"
+  uio[7]: "Input B bit 7"
+
+# Do not change!
+yaml_version: 6
