@@ -1,0 +1,35 @@
+102. Printing statistics.
+
+=== tt_um_pwm_cit ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       51        - wires
+       86        - wire bits
+       17        - public wires
+       52        - public wire bits
+        8        - ports
+       43        - port bits
+       67 1.41E+03 cells
+        1   17.562   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        2   39.514   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        1   13.171   gf180mcu_fd_sc_mcu7t5v0__buf_1
+        8   70.246   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+        8  597.094   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        6   65.856   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        3   46.099   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+        1   19.757   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+        1   13.171   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+        1   21.952   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+        1   17.562   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       23  201.958   gf180mcu_fd_sc_mcu7t5v0__tiel
+        3   85.613   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        4   105.37   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+
+   Chip area for module '\tt_um_pwm_cit': 1409.318400
+     of which used for sequential elements: 597.094400 (42.37%)
+
