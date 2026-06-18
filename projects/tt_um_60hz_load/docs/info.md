@@ -22,12 +22,12 @@ Drives a single high‑voltage FET with enforced **4 µs minimum ON/OFF** time
 * **Four real‑time tuning gates**  
 External PWM or logic‑level inputs adjust loop behavior on the fly:
 
-  * `dc\\\_vref` — DC Link Reference voltage input
-  * `gain\\\_sine` — trims generated sine amplitude
-  * `gain\\\_out` — Output gain trim
-  * `gain\\\_ac` — AC gain
-  * `gain\\\_dc` — DC gain
-  * `mode\\\_ac` — select 1/4 cycle AC operation
+  * `dc_vref` — DC Link Reference voltage input
+  * `gain_sine` — trims generated sine amplitude
+  * `gain_out` — Output gain trim
+  * `gain_ac` — AC gain
+  * `gain_dc` — DC gain
+  * `mode_ac` — select 1/4 cycle AC operation
 * **Safe, simple power topology**  
 Intended for use with a **rectified 240 V AC DC‑link** (VFD‑style front end) and a resistive dump load such as a water heater.
 
@@ -40,28 +40,28 @@ Intended for use with a **rectified 240 V AC DC‑link** (VFD‑style front en
 ### **Inputs (`ui`)**
 
 ```
-ui\\\[0]  ac\\\_sdata      # AC ADC serial data input (3 MHz sample stream)
-ui\\\[1]  dc\\\_sdata      # DC ADC serial data input (3 MHz sample stream)
-ui\\\[2]  dc\\\_vref       # DC Vref target voltage for DC Link
-ui\\\[3]  gain\\\_sine     # Sine amplitude trim (generation gain)
-ui\\\[4]  gain\\\_out      # Dump-PWM gain trim (max dump power)
-ui\\\[5]  gain\\\_ac       # AC Gain trim
-ui\\\[6]  error\\\_dc      # DC Gain trim
-ui\\\[7]  ac\\\_mode       # Select 1/4 cycle ac mode
+ui[0]  ac_sdata      # AC ADC serial data input (3 MHz sample stream)
+ui[1]  dc_sdata      # DC ADC serial data input (3 MHz sample stream)
+ui[2]  dc_vref       # DC Vref target voltage for DC Link
+ui[3]  gain_sine     # Sine amplitude trim (generation gain)
+ui[4]  gain_out      # Dump-PWM gain trim (max dump power)
+ui[5]  gain_ac       # AC Gain trim
+ui[6]  error_dc      # DC Gain trim
+ui[7]  ac_mode       # Select 1/4 cycle ac mode
 
 ```
 
 ### **Outputs (`uo`)**
 
 ```
-uo\\\[0]  adc\\\_cs          # ADC chip-select / sample strobe
-uo\\\[1]  gen\\\_pwm\\\_p       # Grid-former PWM (positive leg)
-uo\\\[2]  gen\\\_pwm\\\_n       # Grid-former PWM (negative leg)
-uo\\\[3]  dump\\\_pwm        # DC-link dump FET PWM (4 µs min pulse width)
-uo\\\[4]  (unused)
-uo\\\[5]  (unused)
-uo\\\[6]  (unused)
-uo\\\[7]  (unused)
+uo[0]  adc_cs          # ADC chip-select / sample strobe
+uo[1]  gen_pwm_p       # Grid-former PWM (positive leg)
+uo[2]  gen_pwm_n       # Grid-former PWM (negative leg)
+uo[3]  dump_pwm        # DC-link dump FET PWM (4 µs min pulse width)
+uo[4]  (unused)
+uo[5]  (unused)
+uo[6]  (unused)
+uo[7]  (unused)
 ```
 
 \---
@@ -87,8 +87,9 @@ The chip maintains long‑term phase and amplitude alignment by modulating the d
 * Clean synthesis
 * Verified P\&R on **1×2 tile**
 * Ready for TinyTapeout submission
-* verification pending
-* validation pending
+* verification tests
+* Ported to Forge 1k fpga
+* Max10 Fpga Simulation Environment
 
 ![Development Board](dev_board.png)
 
@@ -113,22 +114,26 @@ Fitting this device into a tiny cost would remove all cost from the control part
 A free running angle counter is input into a cordic rotational block and polarity corrected to calculate a 60Hz sine wave.
 The sine wave is gated and then accumulated in PWM modulator produce bi-polar PWM signals which can be used to drive an H Bridge and the low side of a transformer, with the high side providing the grid reference.
 The 'grid' is rectified into a DC Link, with PWM switching into a resistive load.
-The DC and AC 'grid' voltages are sampled by ADC. AC is compared to the sine wave while DC is compared to a PWM provided DC Vref. AC and DC Loops accumulate the pseudo-energy error, compared against a positive thresholds and used to gate |sin| to drive a dump FET while guaranteeing minimum PWM pulse widths (4us).
+The DC and AC 'grid' voltages are sampled by ADC. AC is compared to the sine wave while DC is compared to a PWM provided DC Vref. AC and DC Loops accumulate the pseudo-energy (dv*dt) error, compared against a positive thresholds and used to gate |sin| to drive a dump FET while guaranteeing minimum PWM pulse widths (4us).
 
 ## How to test
 
-Tests I used to bring up the RTL with.
+    make -B FST=
 
 ## External hardware
 
 It will need a real or model system to test:
 
-&#x20;   -Grid-tied solar system, sunlight
--Hbridge and drivers
--Step up transformer
--Bridge Rectifier, DCLink Capactors
--Dump FET and driver
--Resistive Water Heater, water
--ADC with isolated instrumentation.
--external control panel (pwm base loop controls))
+* Grid-tied solar system, sunlight
+* Hbridge and drivers
+* Step up transformer
+* Bridge Rectifier, DCLink Capactors
+* Dump FET and driver
+* Resistive Water Heater, water
+* ADC with isolated instrumentation.
+* external control panel (pwm base loop controls))
+
+### disclaimer
+
+This ASIC is an experimental research design and is not intended for direct connection to mains power or use in certified grid‑tie systems.
 
