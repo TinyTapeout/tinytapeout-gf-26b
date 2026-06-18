@@ -1,0 +1,41 @@
+project:
+  title: "8-bit LFSR Circuit"
+  description: "Sequential PRNG block using Verilog."
+  author: "Satya Roop Bankuru"
+  language: "Verilog"
+  clock_hz: 50000000
+  tiles: "1x1"
+  analog_pins: 0
+  top_module: tt_um_sandy_venky
+  source_files:
+    - "project.v"
+
+yaml_version: 6
+
+pinout:
+  ui[0]: "unused"
+  ui[1]: "unused"
+  ui[2]: "unused"
+  ui[3]: "unused"
+  ui[4]: "unused"
+  ui[5]: "unused"
+  ui[6]: "unused"
+  ui[7]: "unused"
+
+  uo[0]: "out0"
+  uo[1]: "out1"
+  uo[2]: "out2"
+  uo[3]: "out3"
+  uo[4]: "out4"
+  uo[5]: "out5"
+  uo[6]: "out6"
+  uo[7]: "out7"
+
+  uio[0]: "unused"
+  uio[1]: "unused"
+  uio[2]: "unused"
+  uio[3]: "unused"
+  uio[4]: "unused"
+  uio[5]: "unused"
+  uio[6]: "unused"
+  uio[7]: "unused"
