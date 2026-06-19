@@ -1,0 +1,45 @@
+145. Printing statistics.
+
+=== tt_um_coffeepot ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      717        - wires
+      752        - wire bits
+      436        - public wires
+      471        - public wire bits
+        8        - ports
+       43        - port bits
+      733 3.14E+04 cells
+       28  491.725   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        5   109.76   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        3   72.442   gf180mcu_fd_sc_mcu7t5v0__and4_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+       17  298.547   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        1   24.147   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        9  177.811   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        3   39.514   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       40  351.232   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      413 2.63E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       10   329.28   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+       42  460.992   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       30  460.992   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       10  197.568   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+       35  460.992   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       10  175.616   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        8  175.616   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+        6  131.712   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+       13  228.301   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        6  131.712   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        3   72.442   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       10  175.616   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        7  153.664   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        3   26.342   gf180mcu_fd_sc_mcu7t5v0__tieh
+       12   105.37   gf180mcu_fd_sc_mcu7t5v0__tiel
+        6  158.054   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+
+   Chip area for module '\tt_um_coffeepot': 31371.603200
+     of which used for sequential elements: 26291.910400 (83.81%)
+
