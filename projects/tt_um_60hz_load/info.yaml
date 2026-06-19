@@ -39,10 +39,10 @@ pinout:
   uo[1]: "grid_pwm_p"       # Grid-former PWM (positive)
   uo[2]: "grid_pwm_n"       # Grid-former PWM (negative)
   uo[3]: "dump_pwm"         # DC-link dump FET PWM
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[4]: "ac_underflow"     # Status
+  uo[5]: "ac_overflow"      # Status
+  uo[6]: "dc_underflow"     # Status
+  uo[7]: "dc_overflow"      # Status
 
   # Bidirectional pins
   uio[0]: ""

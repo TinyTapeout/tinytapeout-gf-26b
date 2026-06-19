@@ -58,10 +58,10 @@ uo[0]  adc_cs          # ADC chip-select / sample strobe
 uo[1]  gen_pwm_p       # Grid-former PWM (positive leg)
 uo[2]  gen_pwm_n       # Grid-former PWM (negative leg)
 uo[3]  dump_pwm        # DC-link dump FET PWM (4 µs min pulse width)
-uo[4]  (unused)
-uo[5]  (unused)
-uo[6]  (unused)
-uo[7]  (unused)
+uo[4]  ac_underflow    # phase error
+uo[5]  ac_overflow     # ac gain too high
+uo[6]  dc_underflow    # Insufficent power
+uo[7]  dc_overflow     # Overpower, dc gain too high
 ```
 
 \---
