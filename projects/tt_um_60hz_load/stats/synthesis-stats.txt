@@ -5,47 +5,47 @@
         +----------Local Count, excluding submodules.
         |        +-Local Area, excluding submodules.
         |        | 
-     2573        - wires
-     2608        - wire bits
-      339        - public wires
-      374        - public wire bits
+     2600        - wires
+     2635        - wire bits
+      343        - public wires
+      378        - public wire bits
         8        - ports
        43        - port bits
-     2589 6.44E+04 cells
-      108  1.9E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+     2616  6.5E+04 cells
+      118 2.07E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
        30   658.56   gf180mcu_fd_sc_mcu7t5v0__and3_1
-        2   48.294   gf180mcu_fd_sc_mcu7t5v0__and4_1
-       24  526.848   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
-      273 4.79E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-       19  458.797   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
-        8  245.862   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
-       29  572.947   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-        4   52.685   gf180mcu_fd_sc_mcu7t5v0__buf_1
-      171  1.5E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-      331 2.11E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
-       16  526.848   gf180mcu_fd_sc_mcu7t5v0__mux2_2
-       44 3.09E+03   gf180mcu_fd_sc_mcu7t5v0__mux4_1
-      327 3.59E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       10  241.472   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       47 1.03E+03   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      260 4.57E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       14  338.061   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        7   215.13   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+       28   553.19   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        8   105.37   gf180mcu_fd_sc_mcu7t5v0__buf_1
+      168 1.48E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      335 2.13E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       26  856.128   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+       42 2.95E+03   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+      323 3.55E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
        57  875.885   gf180mcu_fd_sc_mcu7t5v0__nand3_1
-       13  256.838   gf180mcu_fd_sc_mcu7t5v0__nand4_1
-      267  3516.71   gf180mcu_fd_sc_mcu7t5v0__nor2_1
-       45  790.272   gf180mcu_fd_sc_mcu7t5v0__nor3_1
-       11  241.472   gf180mcu_fd_sc_mcu7t5v0__nor4_1
-       37  812.224   gf180mcu_fd_sc_mcu7t5v0__oai211_1
-      253 4.44E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       14  276.595   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      285 3.75E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       50   878.08   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       14  307.328   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       44  965.888   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      222  3.9E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
         5  131.712   gf180mcu_fd_sc_mcu7t5v0__oai221_1
-        7  153.664   gf180mcu_fd_sc_mcu7t5v0__oai22_1
-       25   603.68   gf180mcu_fd_sc_mcu7t5v0__oai31_1
-        4   105.37   gf180mcu_fd_sc_mcu7t5v0__oai32_1
-       50   878.08   gf180mcu_fd_sc_mcu7t5v0__or2_1
-       15   329.28   gf180mcu_fd_sc_mcu7t5v0__or3_1
-       11  289.766   gf180mcu_fd_sc_mcu7t5v0__or4_1
-       20  175.616   gf180mcu_fd_sc_mcu7t5v0__tiel
-       90 2.57E+03   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
-       10  526.848   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
-      234 6.16E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
-       49  2473.99   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+       12  263.424   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       22  531.238   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        5  131.712   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       60 1.05E+03   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       18  395.136   gf180mcu_fd_sc_mcu7t5v0__or3_1
+       14  368.794   gf180mcu_fd_sc_mcu7t5v0__or4_1
+       16  140.493   gf180mcu_fd_sc_mcu7t5v0__tiel
+       84  2.4E+03   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       20 1.05E+03   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+      222 5.85E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+       36 1.82E+03   gf180mcu_fd_sc_mcu7t5v0__xor3_1
 
-   Chip area for module '\tt_um_60hz_load': 64372.044800
-     of which used for sequential elements: 21071.724800 (32.73%)
+   Chip area for module '\tt_um_60hz_load': 65024.019200
+     of which used for sequential elements: 21326.368000 (32.80%)
 
