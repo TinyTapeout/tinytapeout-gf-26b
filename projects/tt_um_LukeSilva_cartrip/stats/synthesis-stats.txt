@@ -1,0 +1,54 @@
+148. Printing statistics.
+
+=== tt_um_LukeSilva_cartrip ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     1339        - wires
+     1374        - wire bits
+       91        - public wires
+      126        - public wire bits
+        8        - ports
+       43        - port bits
+     1356 2.63E+04 cells
+       35  614.656   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       16  351.232   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        2   48.294   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       52 1.14E+03   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      116 2.04E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       40  965.888   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       37  731.002   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        2   26.342   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       68  597.094   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       47 2.99E+03   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       29 2.16E+03   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        4  131.712   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+        1   70.246   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+      272 2.99E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       80 1.23E+03   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       28   553.19   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      165 2.17E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       50   878.08   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       11  241.472   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       47 1.03E+03   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      110 1.93E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       14  368.794   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+       15   329.28   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       25   603.68   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        9  237.082   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       22  386.355   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        8  175.616   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        2   52.685   gf180mcu_fd_sc_mcu7t5v0__or4_1
+       16  140.493   gf180mcu_fd_sc_mcu7t5v0__tiel
+        8  228.301   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        2   105.37   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+       15  395.136   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        7  353.427   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+        1        -   tt_gf_cartrip_lg_nameplate
+
+   Area for cell type \tt_gf_cartrip_lg_nameplate is unknown!
+
+   Chip area for module '\tt_um_LukeSilva_cartrip': 26272.153600
+     of which used for sequential elements: 5156.524800 (19.63%)
+
