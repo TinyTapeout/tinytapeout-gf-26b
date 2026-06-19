@@ -1,0 +1,47 @@
+yaml_version: 6
+
+project:
+  title: "ECC Scalar Multiplication"
+  author: "Dhanush Kulkarni"
+  discord: ""
+  description: "Compact 8-bit ECC Scalar Multiplication Engine demonstrating scalar-point arithmetic for Tiny Tapeout."
+  language: "Verilog"
+  clock_hz: 50000000
+
+  tiles: "1x1"
+
+  top_module: "tt_um_ecc_scalar_mult"
+
+  source_files:
+    - "tt_um_ecc_scalar_mult.v"
+
+pinout:
+  # Inputs
+  ui[0]: "Scalar bit 0"
+  ui[1]: "Scalar bit 1"
+  ui[2]: "Scalar bit 2"
+  ui[3]: "Scalar bit 3"
+  ui[4]: "Scalar bit 4"
+  ui[5]: "Scalar bit 5"
+  ui[6]: "Scalar bit 6"
+  ui[7]: "Scalar bit 7"
+
+  # Outputs
+  uo[0]: "Result bit 0"
+  uo[1]: "Result bit 1"
+  uo[2]: "Result bit 2"
+  uo[3]: "Result bit 3"
+  uo[4]: "Result bit 4"
+  uo[5]: "Result bit 5"
+  uo[6]: "Result bit 6"
+  uo[7]: "Result bit 7"
+
+  # Bidirectional pins
+  uio[0]: "Point bit 0"
+  uio[1]: "Point bit 1"
+  uio[2]: "Point bit 2"
+  uio[3]: "Point bit 3"
+  uio[4]: "Point bit 4"
+  uio[5]: "Point bit 5"
+  uio[6]: "Point bit 6"
+  uio[7]: "Point bit 7"
