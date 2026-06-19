@@ -608,9 +608,9 @@ MACRO tt_um_arrakeen_spsram_direct
       LAYER Metal1 ;
         RECT 2.240 3.000 344.400 157.100 ;
       LAYER Metal2 ;
-        RECT 11.580 3.000 342.900 158.390 ;
+        RECT 11.580 3.000 342.900 157.830 ;
       LAYER Metal3 ;
-        RECT 11.530 3.000 342.950 158.340 ;
+        RECT 11.530 3.000 342.950 157.780 ;
       LAYER Metal4 ;
         RECT 33.210 159.420 39.590 159.890 ;
         RECT 40.490 159.420 46.870 159.890 ;
