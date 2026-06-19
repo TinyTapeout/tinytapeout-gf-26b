@@ -1,0 +1,46 @@
+project:
+  title: "V2X Collision Warning"
+  author: "PM Likhith Kumar"
+  discord: ""
+  description: "Simple V2X collision warning system using Verilog"
+  language: "Verilog"
+  clock_hz: 0
+
+  tiles: "1x1"
+
+  top_module: "tt_um_v2x_warning"
+
+  source_files:
+    - "tt_um_v2x_warning.v"
+    - "collision_detector.v"
+    - "v2v_controller.v"
+
+pinout:
+  ui[0]: "Vehicle1 bit0"
+  ui[1]: "Vehicle1 bit1"
+  ui[2]: "Vehicle1 bit2"
+  ui[3]: "Vehicle1 bit3"
+  ui[4]: "Vehicle2 bit0"
+  ui[5]: "Vehicle2 bit1"
+  ui[6]: "Vehicle2 bit2"
+  ui[7]: "Vehicle2 bit3"
+
+  uo[0]: "Collision Warning"
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
