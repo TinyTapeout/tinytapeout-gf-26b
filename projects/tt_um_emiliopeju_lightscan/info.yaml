@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title: "Lightscan"
+  author: "Emilio Perez Juarez"
+  discord: "emiliopeju"
+  description: "BISS-C Position acquisition system for a scan with pulsed output."
+  language: "Verilog"
+  clock_hz: 12000000
+
+  tiles: "1x2"
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_emiliopeju_lightscan"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_emiliopeju_lightscan.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "SPI CS_N"
+  ui[1]: "SPI CLK"
+  ui[2]: "SPI MOSI"
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "RUNNING"
+  uo[1]: "PULSE"
+  uo[2]: "POSITION READY EVENT"
+  uo[3]: "SPI MISO"
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: "BISS-C CLK"
+  uio[1]: "BISS-C DATA"
+  uio[2]: "IO2"
+  uio[3]: "IO3"
+  uio[4]: "IO4"
+  uio[5]: "IO5"
+  uio[6]: "IO6"
+  uio[7]: "IO7"
+
+# Do not change!
+yaml_version: 6
