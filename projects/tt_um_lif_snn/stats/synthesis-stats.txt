@@ -1,0 +1,46 @@
+118. Printing statistics.
+
+=== tt_um_lif_snn ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     1240        - wires
+     1275        - wire bits
+      165        - public wires
+      200        - public wire bits
+        8        - ports
+       43        - port bits
+     1256 3.04E+04 cells
+       47  825.395   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        8  175.616   gf180mcu_fd_sc_mcu7t5v0__and3_1
+       23  504.896   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      134 2.35E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        3   72.442   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        8  158.054   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        5   65.856   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       53  465.382   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      156 9.93E+03   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       17  559.776   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+      120  1317.12   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       12  184.397   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+      243  3.2E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       10  175.616   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       33  724.416   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      166 2.92E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        7  184.397   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        7   169.03   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        5  131.712   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       24  421.478   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        1   26.342   gf180mcu_fd_sc_mcu7t5v0__or4_1
+       19  166.835   gf180mcu_fd_sc_mcu7t5v0__tiel
+       29   827.59   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       11  579.533   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+       60 1.58E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+       51  2574.97   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_lif_snn': 30379.372800
+     of which used for sequential elements: 9931.084800 (32.69%)
+
