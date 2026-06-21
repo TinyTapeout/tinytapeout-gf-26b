@@ -1,0 +1,53 @@
+# Tiny Tapeout project information
+project:
+  title:        "Smerity-Mandelbrot"
+  author:       "Stephen Merity"
+  discord:      "Smerity"                # your discord username (optional)
+  description:  "An interactive fixed-point Mandelbrot iterator with a sequential (bit-serial) multiplier. Tested on iCEBreaker FPGA V1.1a."
+  language:     "Verilog"
+  clock_hz:     10000000          # 10 MHz — smul2 branch, matches CLOCK_PERIOD=100ns (5 MHz on main)
+
+  # Q4.28 sequential = 113,727 um^2 of cells (measured, real GF180 lib)
+  # 2x2 die is 711.2 x 325.36 = 231,393 um^2 -> ~49% utilisation
+  tiles: "2x2"
+
+  top_module:  "tt_um_smerity_mandelbrot"
+
+  source_files:
+    - "project.v"
+    - "mandel.v"
+
+# Pinout — matches the RTL. Do not add/remove pins.
+pinout:
+  # Inputs — the view-packet byte bus (host -> chip)
+  ui[0]: "view-packet data 0"
+  ui[1]: "view-packet data 1"
+  ui[2]: "view-packet data 2"
+  ui[3]: "view-packet data 3"
+  ui[4]: "view-packet data 4"
+  ui[5]: "view-packet data 5"
+  ui[6]: "view-packet data 6"
+  ui[7]: "view-packet data 7"
+
+  # Outputs — the pixel value (iteration count)
+  uo[0]: "pixel value 0"
+  uo[1]: "pixel value 1"
+  uo[2]: "pixel value 2"
+  uo[3]: "pixel value 3"
+  uo[4]: "pixel value 4"
+  uo[5]: "pixel value 5"
+  uo[6]: "pixel value 6"
+  uo[7]: "pixel value 7"
+
+  # Bidirectional pins
+  uio[0]: "pix_valid (out)"
+  uio[1]: "frame_start (out)"
+  uio[2]: "line_end (out)"
+  uio[3]: "param_valid (in)"
+  uio[4]: "param_frame (in)"
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
