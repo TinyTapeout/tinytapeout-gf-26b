@@ -1,0 +1,63 @@
+# Tiny Tapeout project information
+project:
+  title:        "Elemental Harmony Game"      # Project title
+  author:       "Aakarshitha Suresh"      # Your name
+  discord:      "akiha1847"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Elemental Harmony is a silicon-based 4 * 4 strategy game, like Tic-Tac-Toe, where players compete against a logic engine to score points by matching elemental patterns across a digital grid."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:    10000000
+  # 11111111 
+  # 10000000
+  #  8000000
+  # 12048192 # Clock frequency in Hz (or 0 if not applicable)
+  # 19230769 - Max Frequency Tested       
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_elemental_harmony"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_elemental_harmony.v"
+    - "harmony_core.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs (ui_in)
+  ui[0]: "h_pos[0]"            # Human placement grid position bit 0
+  ui[1]: "h_pos[1]"            # Human placement grid position bit 1
+  ui[2]: "h_pos[2]"            # Human placement grid position bit 2
+  ui[3]: "h_pos[3]"            # Human placement grid position bit 3
+  ui[4]: "h_pat[0]"            # Human elemental pattern selection bit 0
+  ui[5]: "h_pat[1]"            # Human elemental pattern selection bit 1
+  ui[6]: "h_pat[2]"            # Human elemental pattern selection bit 2
+  ui[7]: "start_pulse"         # Input trigger to commit current human move
+
+  # Outputs (uo_out)
+  uo[0]: "uo_out[0]"           # Multiplexed output bus bit 0 (scores/moves/occupancy)
+  uo[1]: "uo_out[1]"           # Multiplexed output bus bit 1 (scores/moves/occupancy)
+  uo[2]: "uo_out[2]"           # Multiplexed output bus bit 2 (scores/moves/occupancy)
+  uo[3]: "uo_out[3]"           # Multiplexed output bus bit 3 (scores/moves/occupancy)
+  uo[4]: "uo_out[4]"           # Multiplexed output bus bit 4 (scores/moves/occupancy)
+  uo[5]: "uo_out[5]"           # Multiplexed output bus bit 5 (scores/moves/occupancy)
+  uo[6]: "uo_out[6]"           # Multiplexed output bus bit 6 (scores/moves/occupancy)
+  uo[7]: "uo_out[7]"           # Multiplexed output bus bit 7 (scores/moves/occupancy)
+
+  # Bidirectional pins (uio)
+  uio[0]: "design_done_strobe" # Output: Active high strobe signaling design move complete
+  uio[1]: "fsm_state_out[0]"   # Output: Core FSM current state tracker bit 0
+  uio[2]: "fsm_state_out[1]"   # Output: Core FSM current state tracker bit 1
+  uio[3]: "fsm_state_out[2]"   # Output: Core FSM current state tracker bit 2
+  uio[4]: "fsm_state_out[3]"   # Output: Core FSM current state tracker bit 3
+  uio[5]: "unused_input[0]"    # Unused: Bound input pin tied low internally
+  uio[6]: "unused_input[1]"    # Unused: Bound input pin tied low internally
+  uio[7]: "unused_input[2]"    # Unused: Bound input pin tied low internally
+
+
+# Do not change!
+yaml_version: 6
