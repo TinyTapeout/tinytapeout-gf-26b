@@ -91,7 +91,15 @@ The chip maintains long‑term phase and amplitude alignment by modulating the d
 * Ported to Forge 1k fpga
 * Max10 Fpga Simulation Environment
 
-![Development Board](dev_board.png)
+The Experimental Board (XB) makes building practical systems easier
+
+![XB - Experiment Board](dev_board.png)
+
+The Development Board (DB) is used to develop and bring up the GPC chip and XB module by giving full chip IO access, as well as an example system design
+suitable for benchtop experiments with provisions to scale up in power with detachable AC and DC power modules. Pmods mapped to the Tiny Tapeout pinout
+provide a direct plug in path for when tapeouts return.
+
+![DB - Delvelopment Board](dev_board_basic.png)
 
 ## Why is it?
 
