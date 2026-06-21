@@ -1,0 +1,52 @@
+# Tiny Tapeout project information
+project:
+  title:        "Programmable Waveform and PWM Generator"
+  author:       "silicon_nomad"        # <-- pick your nickname
+  discord:      ""
+  description:  "UART-programmable waveform and PWM generator. Send samples over UART, stored in 256-byte RAM, played back as 8-bit parallel DAC output or 8 independent PWM channels."
+  language:     "Verilog"
+  clock_hz:     10000000               # 10 MHz
+
+  tiles: "2x2"
+
+  top_module:  "tt_um_pattern_gen"
+
+  source_files:
+    - "uart_rx.v"
+    - "ram_256x8.v"
+    - "pattern_player.v"
+    - "pwm_gen.v"
+    - "tt_um_pattern_gen.v"
+
+pinout:
+  # Inputs
+  ui[0]: "UART_RX"
+  ui[1]: "MODE"
+  ui[2]: "LOAD"
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "DAC_D0 / PWM_CH0"
+  uo[1]: "DAC_D1 / PWM_CH1"
+  uo[2]: "DAC_D2 / PWM_CH2"
+  uo[3]: "DAC_D3 / PWM_CH3"
+  uo[4]: "DAC_D4 / PWM_CH4"
+  uo[5]: "DAC_D5 / PWM_CH5"
+  uo[6]: "DAC_D6 / PWM_CH6"
+  uo[7]: "DAC_D7 / PWM_CH7"
+
+  # Bidirectional pins
+  uio[0]: "DAC_WR"
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
