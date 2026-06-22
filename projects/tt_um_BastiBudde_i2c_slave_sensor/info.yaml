@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "chip_design_i2c_slave"      # Project title
+  title:        "I2C Slave Template with Emulated Sensor"      # Project title
   author:       "Sebastian Budde, Janina Speckmann"      # Your name
   discord:      "fl0cko"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "I2C-Slave (up to FM+) with addressable 8x8-bit register-block and 8x8-bit read-only register-block connected to an lfsr"      # One line description of what your project does
+  description:  "I2C slave (tested up to FM+) with eight writable registers and eight read-only registers fed by an internal LFSR that emulates a sensor - a reusable template for a real I2C sensor."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     25000000       # Clock frequency in Hz (or 0 if not applicable)
 
