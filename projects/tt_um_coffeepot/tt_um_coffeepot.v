@@ -123,10 +123,10 @@ module tt_um_coffeepot (clk,
  wire \g_channel[0].m_rmii.m_tx_delay.clk_phase_sel_q_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
  wire \g_channel[0].m_rmii.m_tx_delay.inner_clk ;
  wire net575;
- wire \g_channel[0].m_rmii.m_tx_delay.tx_buff[0] ;
- wire \g_channel[0].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
- wire \g_channel[0].m_rmii.m_tx_delay.tx_buff[1] ;
- wire \g_channel[0].m_rmii.m_tx_delay.tx_v_buff ;
+ wire \g_channel[0].m_rmii.m_tx_delay.tx_i[0] ;
+ wire \g_channel[0].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
+ wire \g_channel[0].m_rmii.m_tx_delay.tx_i[1] ;
+ wire \g_channel[0].m_rmii.m_tx_delay.tx_v_i ;
  wire \g_channel[0].m_rmii.m_tx_delay.tx_v_o ;
  wire \g_channel[1].m_mac_rx.buff[0] ;
  wire \g_channel[1].m_mac_rx.buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
@@ -227,10 +227,10 @@ module tt_um_coffeepot (clk,
  wire \g_channel[1].m_mac_tx.tx_v_o ;
  wire \g_channel[1].m_rmii.m_tx_delay.inner_clk ;
  wire net576;
- wire \g_channel[1].m_rmii.m_tx_delay.tx_buff[0] ;
- wire \g_channel[1].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
- wire \g_channel[1].m_rmii.m_tx_delay.tx_buff[1] ;
- wire \g_channel[1].m_rmii.m_tx_delay.tx_v_buff ;
+ wire \g_channel[1].m_rmii.m_tx_delay.tx_i[0] ;
+ wire \g_channel[1].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
+ wire \g_channel[1].m_rmii.m_tx_delay.tx_i[1] ;
+ wire \g_channel[1].m_rmii.m_tx_delay.tx_v_i ;
  wire \g_channel[1].m_rmii.m_tx_delay.tx_v_o ;
  wire \g_channel[2].m_mac_rx.buff[0] ;
  wire \g_channel[2].m_mac_rx.buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
@@ -337,10 +337,10 @@ module tt_um_coffeepot (clk,
  wire \g_channel[2].m_mac_tx.tx_v_o_gf180mcu_fd_sc_mcu7t5v0__nand2_1_ZN_A1 ;
  wire \g_channel[2].m_rmii.m_tx_delay.inner_clk ;
  wire clk_regs;
- wire \g_channel[2].m_rmii.m_tx_delay.tx_buff[0] ;
- wire \g_channel[2].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
- wire \g_channel[2].m_rmii.m_tx_delay.tx_buff[1] ;
- wire \g_channel[2].m_rmii.m_tx_delay.tx_v_buff ;
+ wire \g_channel[2].m_rmii.m_tx_delay.tx_i[0] ;
+ wire \g_channel[2].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ;
+ wire \g_channel[2].m_rmii.m_tx_delay.tx_i[1] ;
+ wire \g_channel[2].m_rmii.m_tx_delay.tx_v_i ;
  wire \g_channel[2].m_rmii.m_tx_delay.tx_v_o ;
  wire \m_switch.buff_q[0][0] ;
  wire \m_switch.buff_q[0][100] ;
@@ -25287,36 +25287,36 @@ module tt_um_coffeepot (clk,
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
     .CLK(clknet_leaf_19_clk_regs),
-    .Q(\g_channel[0].m_rmii.m_tx_delay.tx_buff[0] ),
+    .Q(\g_channel[0].m_rmii.m_tx_delay.tx_i[0] ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 \g_channel[0].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D_gf180mcu_fd_sc_mcu7t5v0__nand3_1_ZN  (.A1(\g_channel[0].m_mac_tx.fsm_q[0]_gf180mcu_fd_sc_mcu7t5v0__or3_1_A1_Z ),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 \g_channel[0].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D_gf180mcu_fd_sc_mcu7t5v0__nand3_1_ZN  (.A1(\g_channel[0].m_mac_tx.fsm_q[0]_gf180mcu_fd_sc_mcu7t5v0__or3_1_A1_Z ),
     .A2(\g_channel[0].m_mac_tx.data_i[0]_gf180mcu_fd_sc_mcu7t5v0__nand2_1_A1_ZN ),
     .A3(\g_channel[0].m_mac_tx.data_i[0]_gf180mcu_fd_sc_mcu7t5v0__nand2_1_A1_A2_gf180mcu_fd_sc_mcu7t5v0__nand2_1_A2_ZN ),
-    .ZN(\g_channel[0].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
+    .ZN(\g_channel[0].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_buff[1]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_mac_tx.tx_o[1] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_i[1]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_mac_tx.tx_o[1] ),
     .CLK(clknet_leaf_19_clk_regs),
-    .Q(\g_channel[0].m_rmii.m_tx_delay.tx_buff[1] ),
+    .Q(\g_channel[0].m_rmii.m_tx_delay.tx_i[1] ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_v_buff_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_mac_tx.tx_v_o ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_v_i_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_mac_tx.tx_v_o ),
     .CLK(clknet_leaf_20_clk_regs),
-    .Q(\g_channel[0].m_rmii.m_tx_delay.tx_v_buff ),
+    .Q(\g_channel[0].m_rmii.m_tx_delay.tx_v_i ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_v_o_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_rmii.m_tx_delay.tx_v_buff ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[0].m_rmii.m_tx_delay.tx_v_o_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[0].m_rmii.m_tx_delay.tx_v_i ),
     .CLK(\clknet_1_0__leaf_g_channel[0].m_rmii.m_tx_delay.inner_clk ),
     .Q(\g_channel[0].m_rmii.m_tx_delay.tx_v_o ),
     .VDD(VPWR),
@@ -26047,36 +26047,36 @@ module tt_um_coffeepot (clk,
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
     .CLK(clknet_leaf_18_clk_regs),
-    .Q(\g_channel[1].m_rmii.m_tx_delay.tx_buff[0] ),
+    .Q(\g_channel[1].m_rmii.m_tx_delay.tx_i[0] ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 \g_channel[1].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D_gf180mcu_fd_sc_mcu7t5v0__nand3_1_ZN  (.A1(\g_channel[1].m_mac_tx.fsm_q[0]_gf180mcu_fd_sc_mcu7t5v0__or3_1_A1_Z ),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 \g_channel[1].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D_gf180mcu_fd_sc_mcu7t5v0__nand3_1_ZN  (.A1(\g_channel[1].m_mac_tx.fsm_q[0]_gf180mcu_fd_sc_mcu7t5v0__or3_1_A1_Z ),
     .A2(\g_channel[1].m_mac_tx.data_i[0]_gf180mcu_fd_sc_mcu7t5v0__nand2_1_A1_ZN ),
     .A3(\g_channel[1].m_mac_tx.data_v_i_gf180mcu_fd_sc_mcu7t5v0__aoi221_1_A1_B1_gf180mcu_fd_sc_mcu7t5v0__clkinv_1_ZN_I ),
-    .ZN(\g_channel[1].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
+    .ZN(\g_channel[1].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_buff[1]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_mac_tx.tx_o[1] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_i[1]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_mac_tx.tx_o[1] ),
     .CLK(clknet_leaf_18_clk_regs),
-    .Q(\g_channel[1].m_rmii.m_tx_delay.tx_buff[1] ),
+    .Q(\g_channel[1].m_rmii.m_tx_delay.tx_i[1] ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_v_buff_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_mac_tx.tx_v_o ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_v_i_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_mac_tx.tx_v_o ),
     .CLK(clknet_leaf_18_clk_regs),
-    .Q(\g_channel[1].m_rmii.m_tx_delay.tx_v_buff ),
+    .Q(\g_channel[1].m_rmii.m_tx_delay.tx_v_i ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_v_o_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_rmii.m_tx_delay.tx_v_buff ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[1].m_rmii.m_tx_delay.tx_v_o_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[1].m_rmii.m_tx_delay.tx_v_i ),
     .CLK(\clknet_1_0__leaf_g_channel[1].m_rmii.m_tx_delay.inner_clk ),
     .Q(\g_channel[1].m_rmii.m_tx_delay.tx_v_o ),
     .VDD(VPWR),
@@ -26841,36 +26841,36 @@ module tt_um_coffeepot (clk,
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
     .CLK(clknet_leaf_18_clk_regs),
-    .Q(\g_channel[2].m_rmii.m_tx_delay.tx_buff[0] ),
+    .Q(\g_channel[2].m_rmii.m_tx_delay.tx_i[0] ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__nand3_1 \g_channel[2].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D_gf180mcu_fd_sc_mcu7t5v0__nand3_1_ZN  (.A1(\g_channel[2].m_mac_tx.fsm_q[0]_gf180mcu_fd_sc_mcu7t5v0__or3_1_A1_Z ),
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 \g_channel[2].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D_gf180mcu_fd_sc_mcu7t5v0__nand3_1_ZN  (.A1(\g_channel[2].m_mac_tx.fsm_q[0]_gf180mcu_fd_sc_mcu7t5v0__or3_1_A1_Z ),
     .A2(\g_channel[2].m_mac_tx.data_i[0]_gf180mcu_fd_sc_mcu7t5v0__nand2_1_A1_ZN ),
     .A3(\g_channel[2].m_mac_tx.data_v_i_gf180mcu_fd_sc_mcu7t5v0__nand2_1_A1_ZN_gf180mcu_fd_sc_mcu7t5v0__oai211_1_B_A1 ),
-    .ZN(\g_channel[2].m_rmii.m_tx_delay.tx_buff[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
+    .ZN(\g_channel[2].m_rmii.m_tx_delay.tx_i[0]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_D ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_buff[1]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_mac_tx.tx_o[1] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_i[1]_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_mac_tx.tx_o[1] ),
     .CLK(clknet_leaf_18_clk_regs),
-    .Q(\g_channel[2].m_rmii.m_tx_delay.tx_buff[1] ),
+    .Q(\g_channel[2].m_rmii.m_tx_delay.tx_i[1] ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_v_buff_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_mac_tx.tx_v_o ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_v_i_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_mac_tx.tx_v_o ),
     .CLK(clknet_leaf_18_clk_regs),
-    .Q(\g_channel[2].m_rmii.m_tx_delay.tx_v_buff ),
+    .Q(\g_channel[2].m_rmii.m_tx_delay.tx_v_i ),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_v_o_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_rmii.m_tx_delay.tx_v_buff ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_1 \g_channel[2].m_rmii.m_tx_delay.tx_v_o_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q  (.D(\g_channel[2].m_rmii.m_tx_delay.tx_v_i ),
     .CLK(\clknet_1_0__leaf_g_channel[2].m_rmii.m_tx_delay.inner_clk ),
     .Q(\g_channel[2].m_rmii.m_tx_delay.tx_v_o ),
     .VDD(VPWR),
@@ -46571,14 +46571,14 @@ module tt_um_coffeepot (clk,
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_2 uio_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q (.D(\g_channel[2].m_rmii.m_tx_delay.tx_buff[1] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_2 uio_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q (.D(\g_channel[2].m_rmii.m_tx_delay.tx_i[1] ),
     .CLK(\clknet_1_0__leaf_g_channel[2].m_rmii.m_tx_delay.inner_clk ),
     .Q(net637),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_2 uio_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_1 (.D(\g_channel[2].m_rmii.m_tx_delay.tx_buff[0] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_2 uio_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_1 (.D(\g_channel[2].m_rmii.m_tx_delay.tx_i[0] ),
     .CLK(\clknet_1_1__leaf_g_channel[2].m_rmii.m_tx_delay.inner_clk ),
     .Q(net638),
     .VDD(VPWR),
@@ -46597,28 +46597,28 @@ module tt_um_coffeepot (clk,
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q (.D(\g_channel[1].m_rmii.m_tx_delay.tx_buff[1] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q (.D(\g_channel[1].m_rmii.m_tx_delay.tx_i[1] ),
     .CLK(\clknet_1_1__leaf_g_channel[1].m_rmii.m_tx_delay.inner_clk ),
     .Q(net639),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_1 (.D(\g_channel[1].m_rmii.m_tx_delay.tx_buff[0] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_1 (.D(\g_channel[1].m_rmii.m_tx_delay.tx_i[0] ),
     .CLK(\clknet_1_0__leaf_g_channel[1].m_rmii.m_tx_delay.inner_clk ),
     .Q(net636),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_2 (.D(\g_channel[0].m_rmii.m_tx_delay.tx_buff[1] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_2 (.D(\g_channel[0].m_rmii.m_tx_delay.tx_i[1] ),
     .CLK(\clknet_1_1__leaf_g_channel[0].m_rmii.m_tx_delay.inner_clk ),
     .Q(net634),
     .VDD(VPWR),
     .VNW(VPWR),
     .VPW(VGND),
     .VSS(VGND));
- gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_3 (.D(\g_channel[0].m_rmii.m_tx_delay.tx_buff[0] ),
+ gf180mcu_fd_sc_mcu7t5v0__dffq_2 uo_out_gf180mcu_fd_sc_mcu7t5v0__dffq_1_Q_3 (.D(\g_channel[0].m_rmii.m_tx_delay.tx_i[0] ),
     .CLK(\clknet_1_0__leaf_g_channel[0].m_rmii.m_tx_delay.inner_clk ),
     .Q(net635),
     .VDD(VPWR),
