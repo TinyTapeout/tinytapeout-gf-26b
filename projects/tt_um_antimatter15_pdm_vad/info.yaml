@@ -3,7 +3,7 @@ project:
   title:        "PDM Voice Activity Detector"      # Project title
   author:       "Kevin"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A one-tile PDM microphone energy estimator."      # One line description of what your project does
+  description:  "A one-tile spectral PDM voice activity score."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     1000000 # Clock frequency in Hz (or 0 if not applicable)
 
@@ -33,14 +33,14 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "energy_bit0"
-  uo[1]: "energy_bit1"
-  uo[2]: "energy_bit2"
-  uo[3]: "energy_bit3"
-  uo[4]: "energy_bit4"
-  uo[5]: "energy_bit5"
-  uo[6]: "energy_bit6"
-  uo[7]: "energy_bit7"
+  uo[0]: "score_bit0"
+  uo[1]: "score_bit1"
+  uo[2]: "score_bit2"
+  uo[3]: "score_bit3"
+  uo[4]: "score_bit4"
+  uo[5]: "score_bit5"
+  uo[6]: "score_bit6"
+  uo[7]: "score_bit7"
 
   # Bidirectional pins
   uio[0]: ""
