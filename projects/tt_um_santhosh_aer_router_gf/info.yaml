@@ -1,0 +1,51 @@
+yaml_version: 6
+
+# -----------------------------------------------------------------------------
+# Tiny Tapeout project information
+# -----------------------------------------------------------------------------
+project:
+  title:        "Asynchronous-AER Spike Router (4-phase REQ/ACK, 16-entry routing table, GF180)"
+  author:       "Prof. Santhosh Sivasubramani, IIT Delhi"
+  discord:      ""
+  description:  "GF180mcuD synchronous implementation of a 4-input / 4-output AER (address-event-representation) spike router. Time-multiplexed AER input and output buses each carry one event at a time as a 2-bit channel tag plus 6-bit address. Each incoming event is captured using a double-flop-synchronised 4-phase bundled-data REQ/ACK handshake, looked up in a 16-entry {dst_ch, dst_addr} routing table (or bypassed to pass through unchanged), queued in a 4-deep FIFO, and emitted out the output port with another 4-phase REQ/ACK handshake. Drops on FIFO overflow are counted in a 16-bit saturating drop counter with a sticky overflow_ever bit. Per-input 8-bit saturating event counters and IN_LAST / OUT_LAST debug latches are readable over SPI. 25 MHz signoff clock."
+  language:     "Verilog"
+  clock_hz:     25000000
+
+  tiles: "1x2"
+
+  top_module:   "tt_um_santhosh_aer_router_gf"
+
+  source_files:
+    - "project.v"
+    - "spi_slave.v"
+
+# -----------------------------------------------------------------------------
+# Pinout
+# -----------------------------------------------------------------------------
+pinout:
+  ui[0]: "src_addr[0] (AER in, LSB)"
+  ui[1]: "src_addr[1]"
+  ui[2]: "src_addr[2]"
+  ui[3]: "src_addr[3]"
+  ui[4]: "src_addr[4]"
+  ui[5]: "src_addr[5] (MSB of 6-bit src addr)"
+  ui[6]: "src_ch[0] (AER in channel tag LSB)"
+  ui[7]: "src_ch[1] (AER in channel tag MSB)"
+
+  uo[0]: "dst_addr[0] (AER out, LSB)"
+  uo[1]: "dst_addr[1]"
+  uo[2]: "dst_addr[2]"
+  uo[3]: "dst_addr[3]"
+  uo[4]: "dst_addr[4]"
+  uo[5]: "dst_addr[5] (MSB of 6-bit dst addr)"
+  uo[6]: "dst_ch[0] (AER out channel tag LSB)"
+  uo[7]: "dst_ch[1] (AER out channel tag MSB)"
+
+  uio[0]: "spi_cs_n (in)"
+  uio[1]: "spi_mosi (in)"
+  uio[2]: "spi_miso (out)"
+  uio[3]: "spi_sck  (in)"
+  uio[4]: "in_req (AER in, REQ from upstream sender)"
+  uio[5]: "in_ack (AER in, ACK to upstream sender)"
+  uio[6]: "out_req (AER out, REQ to downstream receiver)"
+  uio[7]: "out_ack (AER out, ACK from downstream receiver)"
