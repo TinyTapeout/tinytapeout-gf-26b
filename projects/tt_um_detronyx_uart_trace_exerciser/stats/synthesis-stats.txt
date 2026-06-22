@@ -1,0 +1,42 @@
+139. Printing statistics.
+
+=== tt_um_detronyx_uart_trace_exerciser ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     1065        - wires
+     1100        - wire bits
+      186        - public wires
+      221        - public wire bits
+        8        - ports
+       43        - port bits
+     1081 3.12E+04 cells
+       67 1.03E+03   gf180mcu_as_sc_mcu7t3v3__and2_2
+       78 1.71E+03   gf180mcu_as_sc_mcu7t3v3__ao21_2
+       58  1.4E+03   gf180mcu_as_sc_mcu7t3v3__ao22_2
+       35   768.32   gf180mcu_as_sc_mcu7t3v3__ao31_2
+       43  943.936   gf180mcu_as_sc_mcu7t3v3__aoi21_2
+        9  256.838   gf180mcu_as_sc_mcu7t3v3__aoi21b_2
+        4  122.931   gf180mcu_as_sc_mcu7t3v3__aoi22_2
+        4  122.931   gf180mcu_as_sc_mcu7t3v3__aoi31_2
+        7   92.198   gf180mcu_as_sc_mcu7t3v3__buff_2
+      184 1.49E+04   gf180mcu_as_sc_mcu7t3v3__dfsrtp_2
+       34  298.547   gf180mcu_as_sc_mcu7t3v3__inv_2
+      102 2.69E+03   gf180mcu_as_sc_mcu7t3v3__mux2_2
+       66 1.01E+03   gf180mcu_as_sc_mcu7t3v3__nand2_2
+        7  153.664   gf180mcu_as_sc_mcu7t3v3__nand2b_2
+       17  410.502   gf180mcu_as_sc_mcu7t3v3__nand3_2
+       10  307.328   gf180mcu_as_sc_mcu7t3v3__nand4_2
+       45  691.488   gf180mcu_as_sc_mcu7t3v3__nor2_2
+       10   219.52   gf180mcu_as_sc_mcu7t3v3__nor2b_2
+       21  507.091   gf180mcu_as_sc_mcu7t3v3__nor3_2
+       56  860.518   gf180mcu_as_sc_mcu7t3v3__or2_2
+      191 1.68E+03   gf180mcu_as_sc_mcu7t3v3__tieh_4
+        2   17.562   gf180mcu_as_sc_mcu7t3v3__tiel_4
+       22  676.122   gf180mcu_as_sc_mcu7t3v3__xnor2_2
+        9  276.595   gf180mcu_as_sc_mcu7t3v3__xor2_2
+
+   Chip area for module '\tt_um_detronyx_uart_trace_exerciser': 31191.596800
+     of which used for sequential elements: 14944.921600 (47.91%)
+
