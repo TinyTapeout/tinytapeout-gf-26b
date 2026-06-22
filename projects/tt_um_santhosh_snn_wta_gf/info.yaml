@@ -1,0 +1,50 @@
+# Tiny Tapeout project information
+project:
+  title:        "Spiking Neural Network WTA Inference Engine (GF180)"
+  author:       "Prof. Santhosh Sivasubramani, IIT Delhi"
+  discord:      ""
+  description:  "GF180mcuD digital spiking neural network inference engine: 4 LIF neurons with programmable 4x4 signed synaptic weight matrix, per-neuron bias, programmable global threshold/leak/refractory, hard winner-take-all lateral inhibition, optional self-recurrence, SPI-configurable 16-bit register file, 4-channel 2-bit input current coding, 4 spike outputs, 2-bit winner ID output, any-spike and busy flags; deterministic single-cycle neuron update"
+  language:     "Verilog"
+  clock_hz:     25000000
+
+  tiles: "2x2"
+
+  top_module:  "tt_um_santhosh_snn_wta_gf"
+
+  source_files:
+    - "project.v"
+    - "spi_slave.v"
+
+pinout:
+  # Inputs (4 channels of 2-bit input current)
+  ui[0]: "in_cur0[0]"
+  ui[1]: "in_cur0[1]"
+  ui[2]: "in_cur1[0]"
+  ui[3]: "in_cur1[1]"
+  ui[4]: "in_cur2[0]"
+  ui[5]: "in_cur2[1]"
+  ui[6]: "in_cur3[0]"
+  ui[7]: "in_cur3[1]"
+
+  # Outputs
+  uo[0]: "spike[0]"
+  uo[1]: "spike[1]"
+  uo[2]: "spike[2]"
+  uo[3]: "spike[3]"
+  uo[4]: "winner_id[0]"
+  uo[5]: "winner_id[1]"
+  uo[6]: "busy"
+  uo[7]: "any_spike"
+
+  # Bidirectional pins
+  uio[0]: "spi_cs_n"
+  uio[1]: "spi_mosi"
+  uio[2]: "spi_miso"
+  uio[3]: "spi_sck"
+  uio[4]: "overflow_ever"
+  uio[5]: "tick"
+  uio[6]: "winner_valid"
+  uio[7]: "irq"
+
+# Do not change!
+yaml_version: 6
