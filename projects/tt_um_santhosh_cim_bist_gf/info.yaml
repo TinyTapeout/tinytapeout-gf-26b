@@ -1,0 +1,50 @@
+# Tiny Tapeout project information
+project:
+  title:        "CIM Controller with BIST and Fault Map (GF180)"
+  author:       "Prof. Santhosh Sivasubramani, IIT Delhi"
+  discord:      ""
+  description:  "GF180mcuD digital compute-in-memory peripheral: 8x8 1-bit cell array with built-in self-test (march/checkerboard/diagonal patterns), 64-bit sticky fault map, 16-bit dot-product accumulator over user-programmable row activations, SPI-programmable, irq output, 25 MHz signoff clock, 1x2 tile"
+  language:     "Verilog"
+  clock_hz:     25000000
+
+  tiles: "1x2"
+
+  top_module:  "tt_um_santhosh_cim_bist_gf"
+
+  source_files:
+    - "project.v"
+    - "spi_slave.v"
+
+pinout:
+  # Inputs
+  ui[0]: "start_ext (external BIST trigger; rising edge)"
+  ui[1]: "inject_fault (BIST test aid: forces cell[0][0] mismatch)"
+  ui[2]: "reserved"
+  ui[3]: "reserved"
+  ui[4]: "reserved"
+  ui[5]: "reserved"
+  ui[6]: "reserved"
+  ui[7]: "reserved"
+
+  # Outputs
+  uo[0]: "busy (bist_running | cim_running)"
+  uo[1]: "bist_done (sticky)"
+  uo[2]: "cim_done (sticky)"
+  uo[3]: "fault_ever (sticky)"
+  uo[4]: "accum_zero (cim_done && accum==0)"
+  uo[5]: "accum[8]"
+  uo[6]: "accum[9]"
+  uo[7]: "accum[10]"
+
+  # Bidirectional pins
+  uio[0]: "spi_cs_n"
+  uio[1]: "spi_mosi"
+  uio[2]: "spi_miso"
+  uio[3]: "spi_sck"
+  uio[4]: "bist_running"
+  uio[5]: "cim_running"
+  uio[6]: "irq"
+  uio[7]: "reserved"
+
+# Do not change!
+yaml_version: 6
