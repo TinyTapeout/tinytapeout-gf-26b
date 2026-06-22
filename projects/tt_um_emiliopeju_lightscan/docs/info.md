@@ -29,7 +29,7 @@ REG7(RW): BISS-C clock number of rising edges(minus one).
 
 REG8(RO): High bits of last position acquired.
 
-REG9(W): Action register, bit 0 gets a single position, bit 1 starts
+REG9(WO): Action register, bit 0 gets a single position, bit 1 starts
 acquisition, bit 2 produces a single trigger.
 
 REG10(RW): When read, spare IO Input value during last trigger, when written, it
@@ -48,7 +48,7 @@ as input).
 3. Configure register, for example, at frequency 12MHz, the following register
    writes configures a 10s acquisition at 0.1s intervals, BISS-C bitrate at
    1MHz and an encoder that has a 14 bits position:
-   REG3 = 1200000; REG4 = 100; REG6 = 5; REG7 = 26;
+   REG3 = 1199999; REG4 = 99; REG6 = 5; REG7 = 26;
 4. Start the acquisition by writing REG9 = 2
 5. Collect the position from REG2 whenever there is a position ready event,
    this can be detected using an interrupt.
