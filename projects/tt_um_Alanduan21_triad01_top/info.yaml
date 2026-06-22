@@ -3,9 +3,9 @@ project:
   title:        "triad01"      # Project title
   author:       "Duan Yihe"      # Your name
   discord:      "_alanthegreat"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A ternary logic failsafe decision block for autonomous control paths, with scan and lightweight LBIST for diagnosis"      # One line description of what your project does
+  description:  "A clocked failsafe arbitration block for autonomous drone control paths. Evaluates RC and FC health signals through temporal filtering and ternary inference to select PRIMARY / FALLBACK / SAFE_HOLD, driving a 50 Hz PWM output accordingly. Includes a scan chain for counter observability and lightweight LBIST for post-silicon diagnosis. Four operating modes: normal, PWM-test (pad loopback), scan, and LBIST."
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 340x160 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
@@ -19,8 +19,11 @@ project:
   source_files:
     - "project.v"
     - "triad01_input_filter.v"
-    - "triad01_ternary_engine.v"
+    - "triad01_arbitration_engine.v"
     - "triad01_decision_fsm.v"
+    - "triad01_scan.v"
+    - "triad01_lbist.v"
+    - "triad01_pwm_gen.v"
     
   
 
@@ -32,10 +35,10 @@ pinout:
   ui[1]: "rc_live"
   ui[2]: "fc_conf"
   ui[3]: "rc_conf"
-  ui[4]: ""
+  ui[4]: "scan_in"
   ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[6]: "mode[0]"
+  ui[7]: "mode[1]"
 
   # Outputs
   uo[0]: "decision[0]"
@@ -45,15 +48,15 @@ pinout:
   uo[4]: "fc_score[1]"
   uo[5]: "rc_score[0]"
   uo[6]: "rc_score[1]"
-  uo[7]: "1'b0"
+  uo[7]: "PWM_out/loopback"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
+  uio[0]: "safehold_active"
+  uio[1]: "scan_out"
+  uio[2]: "bist_done"
+  uio[3]: "bist_pass"
+  uio[4]: "raw_decision[0]"
+  uio[5]: "raw_decision[1]"
   uio[6]: ""
   uio[7]: ""
 

@@ -1,44 +1,44 @@
-128. Printing statistics.
+138. Printing statistics.
 
 === tt_um_Alanduan21_triad01_top ===
 
         +----------Local Count, excluding submodules.
         |        +-Local Area, excluding submodules.
         |        | 
-       92        - wires
-      127        - wire bits
-       23        - public wires
-       58        - public wire bits
+      337        - wires
+      372        - wire bits
+       79        - public wires
+      114        - public wire bits
         8        - ports
        43        - port bits
-      108 2.73E+03 cells
-        9  158.054   gf180mcu_fd_sc_mcu7t5v0__and2_1
+      353    1E+04 cells
+       19   333.67   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       10   219.52   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        4   96.589   gf180mcu_fd_sc_mcu7t5v0__and4_1
         1   21.952   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
-        7  122.931   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-        1   24.147   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
-        2   39.514   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-        1   13.171   gf180mcu_fd_sc_mcu7t5v0__buf_1
-        5   43.904   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-       17 1.27E+03   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-        4  131.712   gf180mcu_fd_sc_mcu7t5v0__mux2_2
-        6   65.856   gf180mcu_fd_sc_mcu7t5v0__nand2_1
-        4   61.466   gf180mcu_fd_sc_mcu7t5v0__nand3_1
-        1   19.757   gf180mcu_fd_sc_mcu7t5v0__nand4_1
-       14  184.397   gf180mcu_fd_sc_mcu7t5v0__nor2_1
-        2   35.123   gf180mcu_fd_sc_mcu7t5v0__nor3_1
-        1   21.952   gf180mcu_fd_sc_mcu7t5v0__nor4_1
-        7  122.931   gf180mcu_fd_sc_mcu7t5v0__oai21_1
-        1   26.342   gf180mcu_fd_sc_mcu7t5v0__oai221_1
-        1   24.147   gf180mcu_fd_sc_mcu7t5v0__oai31_1
-        1   26.342   gf180mcu_fd_sc_mcu7t5v0__oai32_1
-        3   52.685   gf180mcu_fd_sc_mcu7t5v0__or2_1
-        1   21.952   gf180mcu_fd_sc_mcu7t5v0__or3_1
-        1   26.342   gf180mcu_fd_sc_mcu7t5v0__or4_1
+       32  561.971   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       15  296.352   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        5   65.856   gf180mcu_fd_sc_mcu7t5v0__buf_1
+       42  368.794   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       72  5373.85   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        7  230.496   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+       24  263.424   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+        9  138.298   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+        8  158.054   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+       33   434.65   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+        7  122.931   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+        1   21.952   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+       15  263.424   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        2   43.904   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        3   72.442   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        6   105.37   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        3   79.027   gf180mcu_fd_sc_mcu7t5v0__or4_1
         8   70.246   gf180mcu_fd_sc_mcu7t5v0__tieh
-        7   61.466   gf180mcu_fd_sc_mcu7t5v0__tiel
-        2   57.075   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
-        1   26.342   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        2   17.562   gf180mcu_fd_sc_mcu7t5v0__tiel
+        4   114.15   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       19  500.506   gf180mcu_fd_sc_mcu7t5v0__xor2_1
 
-   Chip area for module '\tt_um_Alanduan21_triad01_top': 2728.633600
-     of which used for sequential elements: 1268.825600 (46.50%)
+   Chip area for module '\tt_um_Alanduan21_triad01_top': 10018.892800
+     of which used for sequential elements: 5373.849600 (53.64%)
 
