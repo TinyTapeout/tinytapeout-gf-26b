@@ -5,47 +5,46 @@
         +----------Local Count, excluding submodules.
         |        +-Local Area, excluding submodules.
         |        | 
-     2493        - wires
-     2528        - wire bits
-      957        - public wires
-      992        - public wire bits
+     2583        - wires
+     2618        - wire bits
+      927        - public wires
+      962        - public wire bits
         8        - ports
        43        - port bits
-     2509 8.76E+04 cells
-       64 1.12E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
-        5   109.76   gf180mcu_fd_sc_mcu7t5v0__and3_1
-       14  338.061   gf180mcu_fd_sc_mcu7t5v0__and4_1
-       10   219.52   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
-      112 1.97E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-        7   169.03   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
-        6  184.397   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
-      177  3.5E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-        5   65.856   gf180mcu_fd_sc_mcu7t5v0__buf_1
-      202 1.77E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-      898 5.72E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
-      217 7.15E+03   gf180mcu_fd_sc_mcu7t5v0__mux2_2
-      150   1646.4   gf180mcu_fd_sc_mcu7t5v0__nand2_1
-       38  583.923   gf180mcu_fd_sc_mcu7t5v0__nand3_1
-       32  632.218   gf180mcu_fd_sc_mcu7t5v0__nand4_1
-      132 1.74E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
-       64 1.12E+03   gf180mcu_fd_sc_mcu7t5v0__nor3_1
-       32  702.464   gf180mcu_fd_sc_mcu7t5v0__nor4_1
-        6  131.712   gf180mcu_fd_sc_mcu7t5v0__oai211_1
-      115 2.02E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
-        1   26.342   gf180mcu_fd_sc_mcu7t5v0__oai221_1
-        1   32.928   gf180mcu_fd_sc_mcu7t5v0__oai222_1
-       54 1.19E+03   gf180mcu_fd_sc_mcu7t5v0__oai22_1
-        6  144.883   gf180mcu_fd_sc_mcu7t5v0__oai31_1
-        6  158.054   gf180mcu_fd_sc_mcu7t5v0__oai32_1
-        2   65.856   gf180mcu_fd_sc_mcu7t5v0__oai33_1
-       11  193.178   gf180mcu_fd_sc_mcu7t5v0__or2_1
-        6  131.712   gf180mcu_fd_sc_mcu7t5v0__or3_1
-        3   79.027   gf180mcu_fd_sc_mcu7t5v0__or4_1
+     2599 8.85E+04 cells
+      116 2.04E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+        9  197.568   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        9  217.325   gf180mcu_fd_sc_mcu7t5v0__and4_1
+        8  175.616   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      148  2.6E+03   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       55 1.33E+03   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        7   215.13   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+      180 3.56E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        3   39.514   gf180mcu_fd_sc_mcu7t5v0__buf_1
+      199 1.75E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      897 5.71E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+      173  5.7E+03   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+      173  1.9E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       42  645.389   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       27  533.434   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      122 1.61E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       29  509.286   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       33  724.416   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       10   219.52   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      149 2.62E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       17  447.821   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        7  230.496   gf180mcu_fd_sc_mcu7t5v0__oai222_1
+       89 1.95E+03   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+        3   72.442   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        2   52.685   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       15  263.424   gf180mcu_fd_sc_mcu7t5v0__or2_1
+        4   87.808   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        9  237.082   gf180mcu_fd_sc_mcu7t5v0__or4_1
         3   26.342   gf180mcu_fd_sc_mcu7t5v0__tieh
        12   105.37   gf180mcu_fd_sc_mcu7t5v0__tiel
-       22  627.827   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
-       96  2528.87   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+       15  428.064   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       34  895.642   gf180mcu_fd_sc_mcu7t5v0__xor2_1
 
-   Chip area for module '\tt_um_coffeepot': 87645.555200
-     of which used for sequential elements: 57167.398400 (65.23%)
+   Chip area for module '\tt_um_coffeepot': 88468.755200
+     of which used for sequential elements: 57103.737600 (64.55%)
 
