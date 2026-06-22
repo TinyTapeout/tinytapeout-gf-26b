@@ -1,0 +1,50 @@
+# Tiny Tapeout project information
+project:
+  title:        "Neuromorphic Spike Codec (GF180)"
+  author:       "Prof. Santhosh Sivasubramani, IIT Delhi"
+  discord:      ""
+  description:  "GF180mcuD digital neuromorphic spike codec: three encoders (rate via 8-bit Fibonacci LFSR, latency/time-to-first-spike, delta with programmable threshold) and three symmetric decoders (rate count, latency-to-value, signed delta-sigma accumulator with leak) in one SPI-programmable block; 1x2 tile, single-spike and bipolar spike outputs, window tick, busy/irq, 25 MHz signoff clock"
+  language:     "Verilog"
+  clock_hz:     25000000
+
+  tiles: "1x2"
+
+  top_module:  "tt_um_santhosh_spike_codec_gf"
+
+  source_files:
+    - "project.v"
+    - "spi_slave.v"
+
+pinout:
+  # Inputs
+  ui[0]: "spike_in (decoder external spike)"
+  ui[1]: "start_ext (external encoder re-arm pulse)"
+  ui[2]: "reserved"
+  ui[3]: "reserved"
+  ui[4]: "reserved"
+  ui[5]: "reserved"
+  ui[6]: "reserved"
+  ui[7]: "reserved"
+
+  # Outputs
+  uo[0]: "spike_pos"
+  uo[1]: "spike_neg"
+  uo[2]: "enc_valid"
+  uo[3]: "dec_valid"
+  uo[4]: "busy"
+  uo[5]: "any_spike"
+  uo[6]: "window_tick"
+  uo[7]: "lfsr_msb"
+
+  # Bidirectional pins
+  uio[0]: "spi_cs_n"
+  uio[1]: "spi_mosi"
+  uio[2]: "spi_miso"
+  uio[3]: "spi_sck"
+  uio[4]: "overflow_ever"
+  uio[5]: "irq"
+  uio[6]: "spike_neg_in (delta decoder negative channel)"
+  uio[7]: "reserved"
+
+# Do not change!
+yaml_version: 6
