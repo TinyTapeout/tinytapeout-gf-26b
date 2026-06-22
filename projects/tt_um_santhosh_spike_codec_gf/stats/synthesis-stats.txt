@@ -1,0 +1,54 @@
+145. Printing statistics.
+
+=== tt_um_santhosh_spike_codec_gf ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     1633        - wires
+     1668        - wire bits
+      241        - public wires
+      276        - public wire bits
+        8        - ports
+       43        - port bits
+     1649 4.21E+04 cells
+       37  649.779   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       14  307.328   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        5  120.736   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       28  614.656   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      100  1756.16   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       17  410.502   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       22  676.122   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+       54 1.07E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+       11  144.883   gf180mcu_fd_sc_mcu7t5v0__buf_1
+      122 1.07E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      222 1.66E+04   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        8  632.218   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+       57 1.88E+03   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+      257 2.82E+03   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       61   937.35   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       16  316.109   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      149 1.96E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       32  561.971   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       11  241.472   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       31  680.512   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      128 2.25E+03   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       19  500.506   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        6  197.568   gf180mcu_fd_sc_mcu7t5v0__oai222_1
+       30   658.56   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       13  313.914   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       12  316.109   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+        1   32.928   gf180mcu_fd_sc_mcu7t5v0__oai33_1
+       39  684.902   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       17  373.184   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        3   79.027   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        3   26.342   gf180mcu_fd_sc_mcu7t5v0__tieh
+       10   87.808   gf180mcu_fd_sc_mcu7t5v0__tiel
+       14  399.526   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        1   52.685   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+       93 2.45E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        6  302.938   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_santhosh_spike_codec_gf': 42141.254400
+     of which used for sequential elements: 17201.587200 (40.82%)
+
