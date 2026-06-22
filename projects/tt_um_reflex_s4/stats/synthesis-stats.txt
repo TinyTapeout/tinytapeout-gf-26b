@@ -1,0 +1,51 @@
+184. Printing statistics.
+
+=== tt_um_reflex_s4 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     6735        - wires
+     6770        - wire bits
+     1435        - public wires
+     1470        - public wire bits
+        8        - ports
+       43        - port bits
+     6751 1.79E+05 cells
+      148  2.6E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       73  1.6E+03   gf180mcu_fd_sc_mcu7t5v0__and3_1
+       46 1.11E+03   gf180mcu_fd_sc_mcu7t5v0__and4_1
+      246  5.4E+03   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      764 1.34E+04   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+       76 1.84E+03   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+      108 3.32E+03   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+      315 6.22E+03   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        9  118.541   gf180mcu_fd_sc_mcu7t5v0__buf_1
+      672  5.9E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+     1444 9.19E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       44 1.45E+03   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+      655  7189.28   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+      151 2.32E+03   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       90 1.78E+03   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      611 8.05E+03   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+      159 2.79E+03   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+       68 1.49E+03   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       69 1.51E+03   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      750  13171.2   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       19  500.506   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        2   65.856   gf180mcu_fd_sc_mcu7t5v0__oai222_1
+       67 1.47E+03   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       27  651.974   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+        9  237.082   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       37  649.779   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       15   329.28   gf180mcu_fd_sc_mcu7t5v0__or3_1
+       14  368.794   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        4   35.123   gf180mcu_fd_sc_mcu7t5v0__tieh
+        8   70.246   gf180mcu_fd_sc_mcu7t5v0__tiel
+        8  228.301   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+       39 1.03E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        4  201.958   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_reflex_s4': 179044.902400
+     of which used for sequential elements: 91926.195200 (51.34%)
+
