@@ -2,7 +2,7 @@
 
 This design contains a single port SRAM block with pins connected directly to TT tile pins. This allows to use this design directly as a SRAM block. This design is for 3.3V and uses the regular design rules, the SRAM design rules are not used.
 
-The included block has 128 words of 8 bits. The dimension is 205.26µm by 83.50µm. These are the pins for the block:
+The included block has 128 words of 8 bits. The dimension is 181.32µm by 83.46µm. These are the pins for the block:
 
 * a (7 bit): address
 * we (1 bit): write enable signal indicating a read or write operation
