@@ -1,0 +1,61 @@
+# Tiny Tapeout project information
+project:
+  title:        "Detronyx Arithmetic Lab Tile"
+  author:       "Detronyx contributors"
+  discord:      ""
+  description:  "Register-loaded add/multiply/divide arithmetic lab for TinyTapeout GF"
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000
+
+  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_detronyx_arith_lab"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "detronyx_pdk_maskrom_recip8_256x8.behav.sv"
+    - "detronyx_umul8_comb.sv"
+    - "simd_add8_sparse_v2.v"
+    - "detronyx_add8_sparse_core.sv"
+    - "detronyx_recip8_div8_core.sv"
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "data[0]"
+  ui[1]: "data[1]"
+  ui[2]: "data[2]"
+  ui[3]: "data[3]"
+  ui[4]: "data[4]"
+  ui[5]: "data[5]"
+  ui[6]: "data[6]"
+  ui[7]: "data[7]"
+
+  # Outputs
+  uo[0]: "result[0]"
+  uo[1]: "result[1]"
+  uo[2]: "result[2]"
+  uo[3]: "result[3]"
+  uo[4]: "result[4]"
+  uo[5]: "result[5]"
+  uo[6]: "result[6]"
+  uo[7]: "result[7]"
+
+  # Bidirectional pins
+  uio[0]: "cmd[0]"
+  uio[1]: "cmd[1]"
+  uio[2]: "cmd[2]"
+  uio[3]: "status"
+  uio[4]: "mode[0]"
+  uio[5]: "mode[1]"
+  uio[6]: "bank[0]"
+  uio[7]: "bank[1]"
+
+# Do not change!
+yaml_version: 6
