@@ -1,0 +1,50 @@
+# Tiny Tapeout project information
+
+project:
+  title: "PolyTrig Digital Waveform Synthesis Core"
+  author: "Saeed Seyedfaraji"
+  discord: ""
+  description: "Compact ASIC-oriented digital waveform synthesis engine supporting LUT-based trigonometric reconstruction, waveform generation, and NCO-style signal synthesis."
+  language: "Verilog"
+  clock_hz: 0
+
+  tiles: "1x1"
+
+  top_module: "tt_um_polytrig_core"
+
+  source_files:
+    - "tt_um_polytrig_core.v"
+    - "sine_cos_lut.v"
+
+pinout:
+  # Dedicated inputs
+  ui[0]: "phase/control bit 0"
+  ui[1]: "phase/control bit 1"
+  ui[2]: "phase/control bit 2"
+  ui[3]: "phase/control bit 3"
+  ui[4]: "phase/control bit 4"
+  ui[5]: "phase/control bit 5"
+  ui[6]: "phase/control bit 6"
+  ui[7]: "phase/control bit 7"
+
+  # Dedicated outputs
+  uo[0]: "waveform output bit 0"
+  uo[1]: "waveform output bit 1"
+  uo[2]: "waveform output bit 2"
+  uo[3]: "waveform output bit 3"
+  uo[4]: "waveform output bit 4"
+  uo[5]: "waveform output bit 5"
+  uo[6]: "waveform output bit 6"
+  uo[7]: "waveform output bit 7"
+
+  # Bidirectional pins
+  uio[0]: "NCO waveform select bit 0"
+  uio[1]: "NCO waveform select bit 1"
+  uio[2]: "NCO amplitude select bit 0"
+  uio[3]: "NCO amplitude select bit 1"
+  uio[4]: "auxiliary/debug bit 4"
+  uio[5]: "auxiliary/debug bit 5"
+  uio[6]: "auxiliary/debug bit 6"
+  uio[7]: "auxiliary/debug bit 7"
+
+yaml_version: 6
