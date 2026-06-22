@@ -1,0 +1,50 @@
+# Tiny Tapeout project information
+project:
+  title:        "Neuromorphic PUF (distinct-tap LFSR arbiter + memristor XOR, GF180)"
+  author:       "Prof. Santhosh Sivasubramani, IIT Delhi"
+  discord:      ""
+  description:  "GF180mcuD digital Physical Unclonable Function: 8 distinct-tap maximal-length 10-bit LFSRs act as synthesizable virtual ring-oscillators, a 6-bit challenge selects a pair, and an arbiter FSM compares their popcounts over a programmable 2^N-cycle window (N in 4..12) to produce a response bit. 64 challenges accumulate into a 64-bit response that can be XORed with a host-loaded memristor vector for dual-entropy mode. SPI-programmable, IRQ output, 25 MHz signoff clock, 1x2 tile (upsized from 1x1: global-placement utilization 103.6% on 1x1)."
+  language:     "Verilog"
+  clock_hz:     25000000
+
+  tiles: "1x2"
+
+  top_module:  "tt_um_santhosh_neuro_puf_gf"
+
+  source_files:
+    - "project.v"
+    - "spi_slave.v"
+
+pinout:
+  # Inputs
+  ui[0]: "reserved (tied-off, available for future memristor-byte live override)"
+  ui[1]: "reserved"
+  ui[2]: "reserved"
+  ui[3]: "reserved"
+  ui[4]: "reserved"
+  ui[5]: "reserved"
+  ui[6]: "reserved"
+  ui[7]: "reserved"
+
+  # Outputs
+  uo[0]: "resp[0][0] (live mirror of R_RESP0 bit 0)"
+  uo[1]: "resp[0][1]"
+  uo[2]: "resp[0][2]"
+  uo[3]: "resp[0][3]"
+  uo[4]: "resp[0][4]"
+  uo[5]: "resp[0][5]"
+  uo[6]: "resp[0][6]"
+  uo[7]: "resp[0][7]"
+
+  # Bidirectional pins
+  uio[0]: "spi_cs_n"
+  uio[1]: "spi_mosi"
+  uio[2]: "spi_miso"
+  uio[3]: "spi_sck"
+  uio[4]: "busy (out)"
+  uio[5]: "done (out, sticky)"
+  uio[6]: "irq (out, sticky)"
+  uio[7]: "reserved (driven low)"
+
+# Do not change!
+yaml_version: 6
