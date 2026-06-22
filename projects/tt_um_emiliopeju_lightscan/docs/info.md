@@ -1,11 +1,16 @@
 ## How it works
 
 It contains a BISS-C master to obtain position from an absolute encoder, it also
-produces a pulse output to synchronize external equipment with the position
-acquisition. The SPI register interface must be used with CPOL=1 and CPHA=1, the
-frame structure is cmd(8 bits) + data(32 bits), in which the top bit of cmd
-indicates if it is a read(0) or a write(1), the remaining bits of cmd indicates
-the register number.
+produces a pulse output to synchronize an external equipment trigger with the
+position acquisition. The SPI register interface must be used with CPOL=1 and
+CPHA=1, the frame structure is cmd(8 bits) + data(32 bits), in which the top bit
+of cmd indicates if it is a read(0) or a write(1), the remaining bits of cmd
+indicates the register number.
+
+Some extra features available are:
+
+- BISS-C delay compensation.
+- Spare UIO control via registers which can be synchronized with the trigger.
 
 ### Registers
 
