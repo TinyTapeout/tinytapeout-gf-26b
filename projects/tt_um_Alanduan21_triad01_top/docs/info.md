@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-A ternary logic failsafe decision block for autonomous control paths, with scan and lightweight LBIST for diagnosis. 
+A clocked failsafe arbitration block for autonomous drone control paths. Triad01 evaluates RC and FC health signals through temporal filtering and ternary inference to select PRIMARY / FALLBACK / SAFE_HOLD, driving a 50 Hz PWM output accordingly. Includes a scan chain for counter observability and lightweight LBIST for post-silicon diagnosis. Four operating modes: normal, PWM-test (pad loopback), scan, and LBIST.
 
 ## How to test
 
