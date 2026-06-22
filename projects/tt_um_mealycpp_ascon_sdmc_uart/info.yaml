@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "ASCON Integrated Crypto Processor"
+  author:       "Dr. Mohamed El-Hadedy"
+  discord:      ""
+  description:  "AEAD-only SDMC ASCON cryptographic processor with UART command/control, using the CISC-style AEAD core. HASH, XOF, CXOF, and chain modes are intentionally excluded from this branch."
+  language:     "Verilog"
+  clock_hz:     50000000
+
+  tiles: "4x4"
+
+  top_module:  "tt_um_mealycpp_ascon_sdmc_uart"
+
+  source_files:
+    - "ascon_round.v"
+    - "ascon_permutation.v"
+    - "uart_rx.v"
+    - "uart_tx.v"
+    - "sdmc/sdmc_ascon_perm_unit64.v"
+    - "sdmc/sdmc_aead_uart_frontend.v"
+    - "sdmc/sdmc_aead128_core.v"
+    - "sdmc/sdmc_xof_family_core.v"
+    - "sdmc/sdmc_xof_chain_family_core.v"
+    - "sdmc/sdmc_crypto_helpers.v"
+    - "project_sdmc_uart_top.v"
+
+pinout:
+  ui[0]: "uart_rx_cmd_data"
+  ui[1]: "unused"
+  ui[2]: "unused"
+  ui[3]: "reserved"
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  uo[0]: "uart_tx_result"
+  uo[1]: "constant_high"
+  uo[2]: "uart_tx_result_mirror"
+  uo[3]: "busy"
+  uo[4]: "done"
+  uo[5]: "error_sticky"
+  uo[6]: "auth_ok"
+  uo[7]: "heartbeat"
+
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6

@@ -1,0 +1,56 @@
+190. Printing statistics.
+
+=== tt_um_mealycpp_ascon_sdmc_uart ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+    21782        - wires
+    21817        - wire bits
+     4837        - public wires
+     4872        - public wire bits
+        8        - ports
+       43        - port bits
+    21798 6.61E+05 cells
+      235 4.13E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       74 1.62E+03   gf180mcu_fd_sc_mcu7t5v0__and3_1
+       35  845.152   gf180mcu_fd_sc_mcu7t5v0__and4_1
+      115  2524.48   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+     1352 2.37E+04   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+      574 1.39E+04   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+      193  5931.43   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+     1331 2.63E+04   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+        7   92.198   gf180mcu_fd_sc_mcu7t5v0__buf_1
+     2277    2E+04   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+       24 1.53E+03   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+     4791 3.58E+05   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+       20 1.58E+03   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+      642 2.11E+04   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+       17 1.19E+03   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+     3276  3.6E+04   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+      255 3.92E+03   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       89 1.76E+03   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+     1198 1.58E+04   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+      139 2.44E+03   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+      100   2195.2   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+      146  3.2E+03   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+     2416 4.24E+04   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+       66 1.74E+03   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+       34 1.12E+03   gf180mcu_fd_sc_mcu7t5v0__oai222_1
+      357 7.84E+03   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+      278 6.71E+03   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+      130 3.42E+03   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       26  856.128   gf180mcu_fd_sc_mcu7t5v0__oai33_1
+      166 2.92E+03   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       17  373.184   gf180mcu_fd_sc_mcu7t5v0__or3_1
+       19  500.506   gf180mcu_fd_sc_mcu7t5v0__or4_1
+        1    8.781   gf180mcu_fd_sc_mcu7t5v0__tieh
+        8   70.246   gf180mcu_fd_sc_mcu7t5v0__tiel
+      244 6.96E+03   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+      192 1.01E+04   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+      826 2.18E+04   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+      128 6.46E+03   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\tt_um_mealycpp_ascon_sdmc_uart': 660605.926400
+     of which used for sequential elements: 360693.312000 (54.60%)
+
