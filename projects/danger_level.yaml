@@ -13,3 +13,9 @@
 #    level: medium
 #    reason: 'The project shorts the power rails when the "addi x0, x0, 0xdeadbeef" instruction is executed.'
 # ```
+tt_um_detronyx_arith_lab:
+    level: high
+    reason: 'Uses a broken version of the 3v3 SCL that has a short in buf_8'
+tt_um_detronyx_uart_trace_exerciser:
+    level: high
+    reason: 'Uses a broken version of the 3v3 SCL that has a short in buf_8'
